@@ -1,0 +1,43 @@
+.whats-on{
+    box-shadow: 0 1px 0 0 $background-blue;
+    float: left;
+    background-color:$white;
+    width: 100%;
+    margin-top:20px;
+    @include susy-breakpoint(max-width $large){
+        margin-top: 20px;
+    }
+    .whats-on__title{
+        @extend %title;
+        @include susy-breakpoint(max-width $large){
+            background-color: $level1-color;
+        }
+        h2{
+            @include susy-breakpoint(max-width $large){
+                color: $white;
+            }
+        }
+    }
+    .video-img-thumbnail{
+        padding-top: 6px;
+        padding-left: 30px;
+        padding-right: 16px;
+
+        @include susy-breakpoint(max-width $large) {
+            padding: 20px;
+        }
+
+        li{
+            @include susy-breakpoint(max-width $medium){
+                @include gallery(2 of 4);
+                margin-bottom:20px;
+                min-height:0;
+            }
+        }
+    }
+    @include susy-breakpoint(max-width $medium) {
+        .add-ellipse {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.menu-title {
+    color: #FFF;
+    background-color: $level1-color;
+    width: 100%;
+    border-left: 4px solid $level2-color;
+    min-height: 48px;
+    text-align: left;
+    overflow: hidden;
+    @include susy-breakpoint(max-width $large) {
+        max-width: 660px;
+        margin: 0 auto;
+    }
+    @include susy-breakpoint(max-width $medium) {
+        float: left;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between !important;
+    }
+    h2 {
+        text-transform: uppercase;
+        margin: 0;
+        width: 100%;
+        padding: 17px 20px 15px 20px;
+        @include susy-breakpoint(max-width $large) {
+            width: 80%;
+            padding: 19px 20px 14px 20px\0;
+        }
+        padding: 18px 20px 14px 20px\0;
+    }
+    .nav-icon {
+        display: none;
+        width: 50px;
+        height: 50px;
+        float: right;
+        text-align: center;
+        min-height: 43px;
+        cursor: pointer;
+        @include susy-breakpoint(max-width $large) {
+            display: inline-block;
+        }
+        .nav-close {
+            display: none;
+            color: #FFF;
+            font-size: toRem(24);
+        }
+        img {
+            // height: 100%;
+            float: right;
+        }
+    }
+    // .nav-icon-toggle {
+    //     @include susy-breakpoint(max-width $large) {
+    //         // background-color: $level2-color;
+    //     }
+    // }
+}

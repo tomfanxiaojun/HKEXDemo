@@ -1,0 +1,109 @@
+.pollWidget-checkbox {
+    //end
+    font-size: toRem(14);
+    color: $hkex-blue;
+    line-height: 1.43;
+    background-color: $white;
+    margin-top: 20px;
+
+    &__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        @include susy-media($medium $large){
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 30px;
+        }
+        &-img-container {
+          @include susy-breakpoint(max-width $large){
+            text-align: center;
+          }
+          img {
+              width: 100%;
+              @include susy-breakpoint(max-width $large){
+                width: 280px;
+              }
+          }
+        }
+        &__subtitle {
+            font-weight: bold;
+            @include susy-breakpoint(max-width $large){
+              margin: 20px 0 10px 0;
+            }
+            @include susy-breakpoint(max-width $medium){
+                margin: 15px 0 5px 0;
+            }
+        }
+    }
+}
+.checkbox-custom {
+    hr {
+        margin: 0;
+    }
+    &__wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    [type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="checkbox"]+ label {
+        position: relative;
+        padding-left: 22px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    /* checkbox aspect */
+    [type="checkbox"] + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $checkbox-border-color;
+        background: $white;
+        border-radius: 2px;
+    }
+    /* checked mark aspect */
+    [type="checkbox"] + label:after {
+        background: url("../images/checked.svg") no-repeat 0 center;
+        background-size: 50% 50%;
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 1px;
+        top: -1px;
+        transition: all 0.2s;
+        width: 26px;
+        height: 24px;
+    }
+    /* checked mark aspect changes */
+    [type="checkbox"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="checkbox"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.fontsize-small {
+  .checkbox-custom [type="checkbox"] + label:before {
+    top: -2px;
+  }
+  .checkbox-custom [type="checkbox"] + label:after {
+    top: -6px;
+  }
+
+}
+.fontsize-large {
+  .checkbox-custom [type="checkbox"] + label:before {
+    top: 4px;
+  }
+  .checkbox-custom [type="checkbox"] + label:after {
+    top: 0;
+  }
+}

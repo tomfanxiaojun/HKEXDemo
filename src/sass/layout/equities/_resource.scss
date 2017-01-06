@@ -1,0 +1,17 @@
+.resource{
+    background: $white;
+    margin-top: 20px;
+    box-shadow: 0 1px 0 0 #a1b4c5;
+    &__content{
+        padding-left: 20px;
+        padding-right: 20px;
+        @include susy-breakpoint(max-width $large) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

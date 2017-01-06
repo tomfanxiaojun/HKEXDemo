@@ -1,0 +1,102 @@
+.pollWidget-radio {
+    //for layout
+    margin-top: 20px;
+    //end
+    font-size: toRem(14);
+    color: $hkex-blue;
+    line-height: 1.43;
+    background-color: $white;
+    &__content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        @include susy-media($medium $large){
+          padding-left: 30px;
+          padding-right: 30px;
+        };
+        &-img-container {
+            img {
+                width: 100%;
+            }
+        }
+        &__subtitle {
+            font-weight: bold;
+            @include susy-breakpoint(max-width $large){
+              margin: 20px 0 10px 0;
+            }
+            @include susy-breakpoint(max-width $medium){
+                margin: 15px 0 5px 0;
+            }
+        }
+    }
+}
+.radio-custom {
+    hr {
+        margin: 0;
+    }
+    &__wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    [type="radio"] {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]+ label {
+        position: relative;
+        padding-left: 22px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    /* radio aspect */
+    [type="radio"] + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $checkbox-border-color;
+        background: $white;
+        border-radius: 50%;
+    }
+
+    /* checked mark aspect */
+    [type="radio"] + label:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 3.5px;
+        top: 5.3px;
+        transition: all 0.2s;
+        width: 8.5px;
+        height: 8.5px;
+        border-radius: 50%;
+        background-color: $level1-color;
+    }
+    /* checked mark aspect changes */
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.fontsize-small {
+  .radio-custom [type="radio"] + label:before {
+    top: -2px;
+  }
+  .radio-custom [type="radio"] + label:after {
+    top: 1px;
+  }
+}
+.fontsize-large {
+  .radio-custom  [type="radio"] + label:before {
+    top: 4px;
+  }
+  .radio-custom [type="radio"] + label:after {
+    top: 7px;
+  }
+}

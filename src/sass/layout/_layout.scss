@@ -1,0 +1,153 @@
+// Content -----------
+.container {
+    padding: 0 30px;
+
+    @include susy-breakpoint(max-width $desktop-padding-remove) {
+        padding: 0;
+    }
+
+    @include container();
+
+    @include susy-breakpoint(max-width $large) {
+        max-width: 660px;
+        margin: 0 auto;
+        position: relative;
+    }
+    @include susy-breakpoint(max-width $medium) {
+        max-width: 100%;
+        position: static;
+    }
+}
+
+// Home page layout
+.l-content__primary{
+    width:  span(9);
+    float: left;
+    margin-right: gutter();
+
+    // @include susy-breakpoint(max-width $desktop-mid) {
+    //     @include span(8);
+    // }
+
+    @include susy-breakpoint(max-width $large) {
+        @include span(12);
+    }
+
+}
+
+.l-content__aside{
+    @include span(3 last);
+
+    // @include susy-breakpoint(max-width $desktop-mid) {
+    //     @include span(4 last);
+    // }
+
+    @include susy-breakpoint(max-width $large) {
+        @include span(12);
+    }
+    @include susy-breakpoint(max-width $medium) {
+      @include span(12);
+    }
+}
+
+.l-content{
+  margin-top: -48px;
+  position: relative;
+
+  @include susy-breakpoint(max-width $large) {
+    margin-top: -100px;
+    position: relative;
+  }
+  @include susy-breakpoint(max-width $medium) {
+    margin-top: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+footer{
+    margin-top: 20px;
+}
+
+
+// Use this layout for pages with left navigation and main side
+.content-container{
+    @media screen and (min-width:$desktop-start){
+        position: relative;
+        top: -48px;
+    }
+    @media screen and (max-width:$large){
+       margin-top: 20px;
+    }
+    @media screen and (max-width:$medium){
+       margin-top: 0px;
+       padding: 0;
+    }
+
+}
+.listing-page-content-container{
+   margin-top: 20px;
+}
+.nav-side {
+    @include span(3);
+
+    // @include susy-breakpoint(max-width $desktop-mid) {
+    //     @include span(4);
+    // }
+}
+
+.nav-content-wrap {
+  min-height: 700px;
+  @include span(9 last);
+    // @include susy-breakpoint(max-width $desktop-mid) {
+    //     @include span(8 last);
+    // }
+}
+
+@include susy-breakpoint(max-width $medium) {
+    .nav-side {
+        @include span(12)
+    }
+
+    .nav-content-wrap {
+        @include span(12)
+    }
+}
+
+@include susy-breakpoint(max-width $large) {
+    .nav-side {
+        @include span(12)
+    }
+
+    .nav-content-wrap {
+        min-height:auto;
+        @include span(12)
+    }
+}
+@include susy-breakpoint(max-width $small) {
+    .nav-side {
+        @include span(12)
+    }
+
+    .nav-content-wrap {
+        @include span(12)
+    }
+}
+
+
+// use this layout for full width layout
+
+.l-full-width {
+    @include span(12);
+
+    @include susy-breakpoint(max-width $medium) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// for nonCMS page when content overflow show scroll bar
+.nonCMS-container {
+  width: 100%;
+  overflow-x: auto;
+}

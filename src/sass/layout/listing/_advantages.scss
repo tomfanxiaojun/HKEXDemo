@@ -1,0 +1,89 @@
+.wl-advantages {
+    &__wapper {
+      background: $white url('../images/advantages bkg.png') no-repeat;
+      float: left;
+      width: 100%;
+      background-size: cover;
+    }
+    &__title {
+      h2 {
+        @extend %title;
+        text-transform: uppercase;
+      }
+    }
+    &__content {
+      padding-top: 60px;
+      @include susy-breakpoint(max-width $large) {
+        padding-top: 17px;
+      }
+    }
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      &-item {
+        width: 100%;
+        float: left;
+        display: inline-block;
+        padding-bottom: 50px;
+        @include susy-breakpoint(max-width $large) {
+          padding-bottom: 30px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+          width: 100%;
+          padding-bottom: 0;
+        }
+        &__col {
+          display: inline-block;
+          float: left;
+          width: 49%;
+          padding: 0 30px;
+          @include susy-breakpoint(max-width $large) {
+            padding: 0 20px;
+          }
+          @include susy-breakpoint(max-width $medium) {
+            padding-bottom: 25px;
+            width: 100%;
+          }
+        }
+        &__img {
+          float: left;
+          @include susy-breakpoint(max-width $large) {
+            width: 25px;
+          }
+        }
+        &__details {
+          padding-left: 20px;
+          @include susy-breakpoint(max-width $large) {
+            padding-left: 16px;
+          }
+
+          float: left;
+          width: 90%;
+          font-style: normal;
+          font-stretch: normal;
+          color: $hkex-blue;
+          &-title {
+            font-size: toRem(16);
+            font-weight: bold;
+            text-transform: uppercase;
+            @include susy-breakpoint(max-width $large) {
+                font-size: toRem(14);
+            }
+          }
+          &-content {
+            padding-top: 10px;
+            font-size: toRem(13);
+            font-weight: normal;
+            line-height: 1.38;
+            @include susy-breakpoint(max-width $large) {
+                font-size: toRem(14);
+                padding-top: 8px;
+            }
+
+          }
+        }
+      }
+    }
+
+}

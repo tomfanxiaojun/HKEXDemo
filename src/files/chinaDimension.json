@@ -1,0 +1,516 @@
+{
+	"tables": [
+		{
+			"header": [
+				{
+		      "row": 0,
+					"col": 0,
+					"isNumField": false,
+		      "text": "Company"
+		    },
+				{
+		      "row": 0,
+					"col": 1,
+					"isNumField": true,
+		      "text": "Stock Code"
+		    },
+				{
+		      "row": 0,
+					"col": 2,
+					"isNumField": true,
+		      "text": "Listing Date"
+		    },
+				{
+		      "row": 0,
+					"col": 3,
+					"isNumField": true,
+		      "text": "Market Cap"
+		    }
+			],
+			"body": [
+				{
+					"row": 2,
+					"col": 0,
+					"text": "China Construction Bank Corporation",
+					"board":"main",
+					"shareType":"H Shares",
+					"isNumField": false
+				},
+				{
+					"row": 2,
+					"col": 1,
+					"text": "00939",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 2,
+					"col": 2,
+					"text": "2005/10/27",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 2,
+					"col": 3,
+					"text": "1,382,399,589,310",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 3,
+					"col": 0,
+					"text": "Industrial and Commercial Bank of China Ltd",
+					"board":"main",
+					"shareType":"H Shares",
+					"isNumField": false
+				},
+				{
+					"row": 3,
+					"col": 1,
+					"text": "01398",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 3,
+					"col": 2,
+					"text": "2006/10/27",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 3,
+					"col": 3,
+					"text": "420,951,116,068",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 4,
+					"col": 0,
+					"text": "Ping An Insurance (Group) Co of China Ltd",
+					"board":"main",
+					"shareType":"H Shares",
+					"isNumField": false
+				},
+				{
+					"row": 4,
+					"col": 1,
+					"text": "02318",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 4,
+					"col": 2,
+					"text": "2004/06/24",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 4,
+					"col": 3,
+					"text": "299,392,591,862",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 5,
+					"col": 0,
+					"text": "Bank of China Ltd",
+					"board":"main",
+					"shareType":"H Shares",
+					"isNumField": false
+				},
+				{
+					"row": 5,
+					"col": 1,
+					"text": "03988",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 5,
+					"col": 2,
+					"text": "2006/06/01",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 5,
+					"col": 3,
+					"text": "296,022,858,438",
+					"board":"main",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 6,
+					"col": 0,
+					"text": "China Mobile Ltd",
+					"board":"main",
+					"shareType":"Red Chip",
+					"isNumField": false
+				},
+				{
+					"row": 6,
+					"col": 1,
+					"text": "00941",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 6,
+					"col": 2,
+					"text": "1997/10/23",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 6,
+					"col": 3,
+					"text": "1,921,624,069,883",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 7,
+					"col": 0,
+					"text": "CNOOC Ltd",
+					"board":"main",
+					"shareType":"Red Chip",
+					"isNumField": false
+				},
+				{
+					"row": 7,
+					"col": 1,
+					"text": "00883",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 7,
+					"col": 2,
+					"text": "2001/02/28",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 7,
+					"col": 3,
+					"text": "429,508,526,566",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 8,
+					"col": 0,
+					"text": "CITIC Ltd",
+					"board":"main",
+					"shareType":"Red Chip",
+					"isNumField": false
+				},
+				{
+					"row": 8,
+					"col": 1,
+					"text": "00267",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 8,
+					"col": 2,
+					"text": "1986/02/26",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 8,
+					"col": 3,
+					"text": "321,738,304,688",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 9,
+					"col": 0,
+					"text": "China Overseas Land & Investment Ltd",
+					"board":"main",
+					"shareType":"Red Chip",
+					"isNumField": false
+				},
+				{
+					"row": 9,
+					"col": 1,
+					"text": "00688",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 9,
+					"col": 2,
+					"text": "1992/08/20",
+					"board":"main",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 9,
+					"col": 3,
+					"text": "288,148,100,371",
+					"board":"main",
+					"shareType":"Red Chip"
+				}
+			]
+		},
+		{
+			"header": [
+				{
+		      "row": 0,
+					"col": 0,
+		      "text": "Company"
+		    },
+				{
+		      "row": 0,
+					"col": 1,
+		      "text": "Stock Code"
+		    },
+				{
+		      "row": 0,
+					"col": 2,
+		      "text": "Listing Date"
+		    },
+				{
+		      "row": 0,
+					"col": 3,
+		      "text": "Market Cap"
+		    }
+			],
+			"body": [
+				{
+					"row": 10,
+					"col": 0,
+					"text": "Shandong Luoxin Pharmaceutical Group Stock Co Ltd",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 10,
+					"col": 1,
+					"text": "08058",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 10,
+					"col": 2,
+					"text": "2005/12/09",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 10,
+					"col": 3,
+					"text": "1,810,160,000",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 11,
+					"col": 0,
+					"text": "Tianjin TEDA Biomedical Engineering Co Ltd",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 11,
+					"col": 1,
+					"text": "08189",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 11,
+					"col": 2,
+					"text": "2002/06/18",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 11,
+					"col": 3,
+					"text": "1,103,925,000",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 12,
+					"col": 0,
+					"text": "Beijing Beida Jade Bird Universal Sci-Tech Co Ltd",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 12,
+					"col": 1,
+					"text": "08095",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 12,
+					"col": 2,
+					"text": "2000/07/27",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 12,
+					"col": 3,
+					"text": "843,552,000",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 13,
+					"col": 0,
+					"text": "Xi'an Haitian Antenna Holdings Co Ltd",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 13,
+					"col": 1,
+					"text": "08227",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 13,
+					"col": 2,
+					"text": "2003/11/05",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 13,
+					"col": 3,
+					"text": "531,614,118",
+					"board":"gem",
+					"shareType":"H Shares"
+				},
+				{
+					"row": 14,
+					"col": 0,
+					"text": "Beijing Tong Ren Tang Chinese Medicine Co Ltd",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 14,
+					"col": 1,
+					"text": "08138",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 14,
+					"col": 2,
+					"text": "2013/05/07",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 14,
+					"col": 3,
+					"text": "9,559,682,000",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 15,
+					"col": 0,
+					"text": "Dafeng Port Heshun Technology Co Ltd",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 15,
+					"col": 1,
+					"text": "08310",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 15,
+					"col": 2,
+					"text": "2013/08/22",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 15,
+					"col": 3,
+					"text": "1,610,000,000",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 16,
+					"col": 0,
+					"text": "Changhong Jiahua Holdings Ltd",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 16,
+					"col": 1,
+					"text": "08016",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 16,
+					"col": 2,
+					"text": "2000/01/24",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 16,
+					"col": 3,
+					"text": "1,381,919,400",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 17,
+					"col": 0,
+					"text": "CNC Holdings Ltd",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 17,
+					"col": 1,
+					"text": "08356",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 17,
+					"col": 2,
+					"text": "2010/08/30",
+					"board":"gem",
+					"shareType":"Red Chip"
+				},
+				{
+					"row": 17,
+					"col": 3,
+					"text": "948,951,888",
+					"board":"gem",
+					"shareType":"Red Chip"
+				}
+			]
+		}
+	]
+}

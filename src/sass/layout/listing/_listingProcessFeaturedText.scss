@@ -1,0 +1,137 @@
+.ls-process {
+    color: $level1-color;
+    margin-top: 30px;
+    @include clearfix;
+    @include susy-breakpoint(max-width $large) {
+        margin-top: 0;
+    }
+    //ls-process__container
+    &__container {
+        background-color: #fff;
+    }
+    //ls-process__header
+    &__header {
+        @include span(4);
+        padding-left: 30px;
+        @include susy-breakpoint(max-width $large) {
+             @include span(12);
+            padding-left: 18px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    //ls-process__wrapper
+    &__wrapper {
+        padding-top: 30px;
+        @include clearfix;
+        @include susy-breakpoint(min-width $medium) {
+            background: url("../images/lighblue-bkg.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    //ls-process__header-title
+    &__header-title {
+        font-size: toRem(30);
+        font-weight: 700;
+        line-height: 1.33;
+        letter-spacing: 1.2px;
+        margin-top: 0;
+        @include susy-breakpoint(max-width $large) {
+            font-size: toRem(14);
+            line-height: 1.14;
+            letter-spacing: 0.2px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            margin-bottom: 10px;
+        }
+        span {
+            color: $level2-color;
+        }
+    }
+    //ls-process__rule-holder
+    &__rule-holder {
+        padding-left: 134px;
+        padding-right: 44px;
+        @include susy-breakpoint(max-width $large) {
+            padding-left: 114px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            padding-left: 25px;
+            padding-right: 19px;
+        }
+    }
+    // ls-process__rule
+    &__rule {
+        margin: 30px 0;
+        width: 100%;
+        @include susy-breakpoint(max-width $large) {
+            margin: 25px 0;
+        }
+    }
+    //ls-process__header-title-sub
+    &__header-title-sub {
+        width: 249px;
+        font-size: toRem(14);
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        @include susy-breakpoint(max-width $large) {
+            width: auto;
+        }
+        span {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    //ls-process__description
+    &__description {
+        padding-right: 41px;
+        @include span(8 last);
+        @include susy-breakpoint(max-width $large) {
+             @include span(12);
+            padding-left: 18px;
+        }
+    }
+    //ls-process__description-text
+    &__description-text {
+        font-size: toRem(14);
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    //ls-process__download
+    &__download {
+        display: block;
+        margin-bottom: 40px;
+        @include susy-breakpoint(max-width $large) {
+            margin-bottom: 20px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            margin-bottom: 0;
+        }
+    }
+}
+.expandAll {
+    float: right;
+    margin: 20px 0;
+    font-size: toRem(14);
+    color: $hkex-blue;
+    cursor: pointer;
+    padding: 0 0 0 20px;
+    text-decoration: none !important;
+}
+ .ls-process__rule-holder a[aria-expanded='false'] {
+      background: url(../images/expand.svg) no-repeat left center;
+}
+ .ls-process__rule-holder a[aria-expanded='true'] {
+      background: url(../images/collapse.svg) no-repeat left center;
+}
+.fontsize-large {
+  .ls-process__header-title {
+    font-size: 30px;
+  }
+}

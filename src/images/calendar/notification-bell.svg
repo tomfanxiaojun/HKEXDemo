@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>6FBFE4B3-DB22-49D5-B9F3-5D7D98758C2F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Calendar---filtering" transform="translate(-255.000000, -671.000000)" fill="#FFB205">
+            <g id="Group-22" transform="translate(220.000000, 227.000000)">
+                <g id="Group-3">
+                    <g id="legend" transform="translate(33.000000, 402.000000)">
+                        <g id="Group-6" transform="translate(0.000000, 39.000000)">
+                            <path d="M10.5,10.75 L5.5,10.75 L5.5,7 C5.5,5.33375 6.75,4.5 7.999375,4.5 L8.000625,4.5 C9.25,4.5 10.5,5.33375 10.5,7 L10.5,10.75 Z M8.625,12.625 C8.625,12.97 8.345,13.25 8,13.25 C7.655,13.25 7.375,12.97 7.375,12.625 L7.375,12 L8.625,12 L8.625,12.625 Z M12.375,10.75 C12.03,10.75 11.75,10.47 11.75,10.125 L11.75,7 C11.75,4.779375 10.27,3.546875 8.625,3.299375 L8.625,2.625 C8.625,2.28 8.345,2 8,2 C7.655,2 7.375,2.28 7.375,2.625 L7.375,3.299375 C5.73,3.546875 4.25,4.779375 4.25,7 L4.25,10.125 C4.25,10.47 3.97,10.75 3.625,10.75 C3.28,10.75 3,11.03 3,11.375 C3,11.72 3.28,12 3.625,12 L6.125,12 L6.125,12.625 C6.125,13.660625 6.964375,14.5 8,14.5 C9.035625,14.5 9.875,13.660625 9.875,12.625 L9.875,12 L12.375,12 C12.72,12 13,11.72 13,11.375 C13,11.03 12.72,10.75 12.375,10.75 L12.375,10.75 Z" id="notification_bell-[#1397]" transform="translate(8.000000, 8.250000) rotate(45.000000) translate(-8.000000, -8.250000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

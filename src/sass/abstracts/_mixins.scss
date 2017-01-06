@@ -1,0 +1,236 @@
+/*
+convert px to rem;
+height:toRem(18);
+*/
+
+@import '../../node_modules/susy/sass/susy';
+
+
+
+@function toRem($px-unit) {
+    @return $px-unit/16#{rem};
+}
+
+/*
+* For title mixins
+*  @extend %title;
+*/
+
+%title {
+    height: 48px;
+    //line-height: 48px;
+    display: table-cell;
+    width:10000px;
+    vertical-align: middle;
+    border-left: $section-title-left-border-widht solid $level2-color;
+    padding-left: 26px;
+    font-weight: 700;
+    color: $level1-color;
+    font-size: toRem(18);
+    letter-spacing: .5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // tablet layout
+    @include susy-media($medium $large) {
+        h2{
+            font-size: toRem(18);
+        }
+
+    }
+    @include susy-breakpoint(max-width $medium) {
+        padding-left: 14px;
+        h2{
+            font-size: toRem(14);
+        }
+
+    }
+}
+
+/*
+ *  vertical align center
+ * eg:
+ * .border_radius {
+ *   @include vertical-center;   }
+ *  For more infomation, pls visit here:
+ *  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ */
+
+@mixin vertical-center {
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*
+ *  horizontal  center
+ * eg:
+ * .border_radius {
+ *   @include horizontal-center;   }
+ *  For more infomation, pls visit here:
+ *  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ */
+
+@mixin horizontal-center {
+    transform: translateX(-50%);
+    text-align: center;
+    position: relative;
+    left: 50%;
+}
+/*!
+ *
+ * eg:
+ * .border_radius {
+ *   @include trigon(5px,red, bottom);   }
+ *
+ */
+
+@mixin trigon($width, $color, $direction) {
+    @each $d in right,
+    left,
+    top,
+    bottom {
+        @if $d!=$direction {
+            border-#{$d}: $width solid transparent;
+        }
+        @else {
+            border-#{$d}: $width solid $color;
+        }
+    }
+}
+
+
+/*
+* Used for creating the placeholder text of an input
+* .foo {
+*  @include placeholder {
+*   color: green; }
+* }
+*/
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+    &::-ms-input-placeholder {
+        @content
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/*
+* Used for creating basic button styles
+* .btn-*** {
+*  @include btn;
+* }
+*/
+@mixin btn {
+    padding: 15px 20px 15px 20px;
+    text-transform: uppercase;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align:center;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: toRem(14);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin btn-two-lines {
+    margin: 15px 20px 15px 20px;
+    text-transform: uppercase;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align:left;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: toRem(14);
+    line-height: 1.1rem;
+    max-height: 2.2rem;
+    &:hover,&:focus, &:active{
+        text-decoration: none;
+    }
+}
+/*
+* Used for quicklinks
+* .**-quicklinks {
+*  @include link-arrow-right;
+* }
+*/
+@mixin link-arrow-right {
+    a {
+        display: inline-block;
+        line-height: 15px;
+        width: 100%;
+        background: url(../images/arrow-right.svg) no-repeat right 10px top 5px;
+        span {
+            max-width: 90%;
+            font-size: toRem(14);
+            font-weight: bold;
+            line-height: 1.45;
+            color: $hkex-blue;
+            float: left;
+        }
+    }
+}
+
+/**
+ *  Used for Like after class
+ * @param  {[type]} $file-type:'../images/pdf.png' [description]
+ * @return {[type]}                                [description]
+ */
+
+@mixin file-icon($file-type:'../images/pdf.svg') {
+    &:after{
+        content: url($file-type);
+        width: toRem(20);
+        height: toRem(11);
+        margin-left: 5px;
+        // vertical-align: text-top;
+        position: relative;
+        top:2px;
+    }
+
+}
+
+/**
+* Used for font type
+* eg:
+* body{
+*   @include font-type;
+* }
+*/
+
+@mixin font-type {
+    font-family: FSElliotPro, FSElliot, Arial, "Heiti TC", "Heiti SC", "微軟正黑體", "微软雅黑", "Microsoft JhengHei", "Microsoft YaHei", sans-serif !important;
+}

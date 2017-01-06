@@ -1,0 +1,45 @@
+.newsRelease-filter {
+
+	@include susy-breakpoint(max-width $large){
+		padding: 0 !important;
+		margin-bottom: 20px;
+		.filter__moreFilter {
+			display: inline-block;
+		}
+	}
+	@include susy-breakpoint(min-width $desktop-start){
+		.filter__container {
+			background-color: $white;
+			padding: 0;
+		}
+		.filter__searchBox {
+			margin-top: 0;
+			width: 100%;
+		}
+		.filter__dropdown-wrapper {
+			width: 100%;
+			float: none;
+			border: none;
+			padding: 0;
+			margin: 0;
+		}
+		.filter__checkbox-wrapper {
+			width: 100%;
+			float: none;
+			border: none;
+			margin-bottom: 20px;
+			.filter__checkBox {
+				padding-top: 20px;
+			}
+		}
+
+		.filter__moreFilter {
+			display: none !important;
+		}
+		.filter__buttonGroup, .filter__selectedItem {
+			position: absolute;
+			left: -999px;
+			opacity: 0;
+		}		
+	}
+}

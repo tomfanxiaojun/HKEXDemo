@@ -1,0 +1,54 @@
+<div class="contact_us__wrapper">
+    <h2 class="title__side"><span>Contact Us</span></h2>
+    <form action="#" class="contact_us__form" id="contact_us__form" method="post" autocomplete="off">
+        <div class="contact_us__form_column">
+            <div class="contact_us__form_text form-input-text">
+                <input type="text" name="name" id="name" placeholder="Name" data-verify-form="true" />
+                <label for="name">Name</label>
+                <div class="contact_us__form_text--error-msg">
+                    Please fill in this field.
+                </div>
+            </div>
+            <div class="contact_us__form_text form-input-text">
+                <input type="text" name="email" id="email" placeholder="Email Address" data-verify-form="true" />
+                <label for="email">Email</label>
+                <div class="contact_us__form_text--error-msg">
+                    The email address is invalid.
+                </div>
+            </div>
+        </div>
+        <div class="contact_us__form_column form-input-textarea" data-verify-form="true">
+            <textarea name="message" id="message" placeholder="Your Message" class="" ></textarea>
+            <label for="message">Your Message</label>
+            <div class="contact_us__form_text--error-msg">
+                Please fill in this field.
+            </div>
+        </div>
+
+        <div class="contact_us__form_column checkbox filter__checkBox--custom">
+            <div class="contact_us__form_subscription filter__checkBox__wrapper">
+                <div class="contact_us__checkbox">
+                    <input type="checkbox" id="subscribe" tabindex="-1" />
+                    <label class="subscribe filter__checkBox__tab-js" tabindex="0" for="subscribe">Subscribe to Newsletter <span class="optional_text">(optional)</span></label>
+                </div>
+                <div class="contact_us__checkbox">
+                    <input type="checkbox" id="agreement" tabindex="-1" />
+                    <label class="subscribe filter__checkBox__tab-js" tabindex="0" for="agreement">Agreement Terms of Service & Privacy</label>
+                    <div class="contact_us__form_text--error-msg">
+                        Please make sure you are agree with HKEX Terms of Service & Privacy
+                    </div>
+                </div>
+            </div>
+            <div class="contact_us__right_part">
+                <div class="contact_us__form_captcha">
+                    <img class="robotcheck" src="images/robotcheck.png" alt="robotcheck" />
+                    <div class="contact_us__form_text--error-msg">
+                        Please Verify with reCAPTCHA
+                    </div>
+                </div>
+ 
+                <button type="button" class="btn-gray contact-us-bt">Send Message</button>
+            </div>
+        </div>
+    </form>
+</div>

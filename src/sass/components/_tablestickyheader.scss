@@ -1,0 +1,10 @@
+
+.sticky-header-table__current-table{
+  .sticky{
+    position: relative;
+    z-index: $z-index-table-sticky-header;
+  }
+  .stickyScrollBtns{
+    position: fixed;
+  }
+}

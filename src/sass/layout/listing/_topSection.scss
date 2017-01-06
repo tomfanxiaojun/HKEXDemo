@@ -1,0 +1,129 @@
+.wl-feature{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    @include susy-breakpoint(max-width $large) {
+        margin-top: 0;
+    }
+    &__column {
+        @include span(3);
+        margin-right: 0;
+        padding: 0 23px 20px 14px;
+        margin-left: 10px;
+        border-right: 1px solid $level10-color;
+        /*min-height: 178px;*/
+        &:last-child{
+            float: right;
+            border-right: none;
+        }
+        @include susy-breakpoint(max-width $large) {
+            @include span(6);
+            min-height: 134px;
+            margin-right: 0;
+            margin-left: 0;
+
+            &:nth-child(2n){
+                border-right: none;
+            }
+            &:nth-child(3n){
+                border-top: 1px solid $level10-color;
+                padding-top: 19px;
+            }
+            &:last-child{
+                float: left;
+                border-top: 1px solid $level10-color;
+                padding-top: 19px;
+            }
+        }
+        @include susy-breakpoint(max-width $medium) {
+            @include span(12);
+            border: none;
+            border-bottom: 1px solid $level10-color;
+            min-height: auto;
+            padding: 18px 0;
+            &:last-child{
+                border-top: none;
+                border-bottom: none;
+            }
+            &:nth-child(3n){
+                border-top: none;
+            }
+
+        }
+    }
+    &__wrapper{
+        @include susy-breakpoint(min-width $large) {
+            background-image: url('../images/wl-feature-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*min-height: 257px;*/
+        }
+        background-color: $level1-color;
+        color: $white;
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 48px 0 40px 0;
+        @include susy-breakpoint(max-width $large) {
+            padding: 29px 27px 27px 28px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            padding: 22px 20px;
+        }
+    }
+    &__text{
+        line-height: 1.5;
+        text-align: center;
+        font-size: toRem(16);
+
+        margin-top: 24px;
+        @include susy-breakpoint(max-width $large) {
+            font-size: toRem(14);
+            margin-bottom: 0;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            float: right;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+
+        }
+    }
+    &__title{
+        font-size: toRem(30);
+        font-weight: 700;
+        letter-spacing: 1.7px;
+        @include susy-breakpoint(max-width $large) {
+            font-size: toRem(26);
+        }
+
+        @include susy-breakpoint(max-width $medium) {
+            float: left;
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
+
+.fontsize-large{
+    .wl-feature{
+        &__column {
+            padding-left: 5px;
+            padding-right: 15px;
+            @include susy-breakpoint(min-width $large) {
+                min-height: 260px;
+            }
+        }
+        &__wrapper{
+            padding-top: 40px;
+            @include susy-breakpoint(min-width $large) {
+                background-size: cover;
+            }
+        }
+        &__text {
+            margin-top: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}

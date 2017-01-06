@@ -1,0 +1,41 @@
+.newsletter{
+    color: $level1-color;
+    input{
+        padding: 14px 20px;
+        border: 1px solid $hkex-border-gray;
+        width: 100%;
+        
+    }
+    button{
+        background-color: $level1-color;
+        padding: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        color: $white;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        font-size: toRem(14);
+
+    }
+
+    &__email::-ms-clear {
+        display: none;
+    }
+
+    &__email-holder{
+
+    }
+    &__btn-holder{
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    form{
+        .cancel, .right{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+<head>
+   {{>header title="Circulars"}}
+</head>
+<body>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+    <div id="skip-to-content"></div>
+    <!-- end: anchor only for accessibility -->
+    {{> bannerMonthlyBulletin circulars}}
+    <!-- end of banner section -->
+
+    <div class="container content-container">
+        <nav class="nav-side left-menu">
+            {{> menuForCirculars}}
+
+            <!-- breadcrumb -->
+            {{> monthlyBulletinBreadcrumb circularsBreadcrumb}}
+        </nav>
+        <!-- end of nav side -->
+
+        <main class="nav-content-wrap">
+          <!-- Filter shoud be put here -->
+          <div class="circulars-title">
+              <h2 class="title__main"><span>Circulars</span></h2>
+          </div>
+          <section class="circulars-filter">
+            {{> filterForCirculars}}
+          </section>
+          <!-- Table should be put here -->
+          <section class="circulars-table">
+            {{> tableForCirculars}}
+          </section>
+          <section class="circulars-loadMore">
+            {{> loadMore}}
+          </section>
+        </main>
+        <!-- end of main content -->
+        <aside class="nav-side side-content">
+            <div class="section__left_panel ">
+                {{> etpOverViewSubscribe}}
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+        {{> footer}}
+        </div>
+    </footer>
+
+    {{> scripts}}
+
+</body>
+</html>

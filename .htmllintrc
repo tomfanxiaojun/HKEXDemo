@@ -1,0 +1,12 @@
+{
+    "tag-self-close": false,
+    "tag-name-match": true,
+    "tag-close": false,
+    "id-class-style": false,
+    "attr-name-style": "dash",
+    "line-end-style": false,
+    "indent-style": false,
+    "indent-width": false,
+    "href-style": "relative",
+    "tag-bans": []
+}

@@ -1,0 +1,36 @@
+a {
+    font-style: normal;
+    font-stretch: normal;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+
+.fontsize-small h1 {
+  font-size: toRem(18);
+}
+
+h2 {
+  font-size: 14px;   
+  font-size: toRem(14);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin:0;
+}
+
+
+h3 {
+  font-size: 12px;  
+  font-size: toRem(12);
+  font-weight: 700;
+  line-height: 1.5;
+}

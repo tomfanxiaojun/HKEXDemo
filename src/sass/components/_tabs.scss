@@ -1,0 +1,63 @@
+.tab-content__pane {
+    display: none;
+    color: $level1-color;
+    text-transform: uppercase;
+}
+.tab-pane {
+    display: none;
+}
+.tab-content > .active {
+    display: block;
+}
+.hkex-nav-tabs{
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: block;
+
+  li {
+      display: inline-block;
+      font-size: toRem(14);
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-bottom: -1px;
+      a,
+      a:hover,
+      a:focus {
+          background-color: transparent;
+          border: 0px solid transparent;
+          color: $hkex-gray;
+          text-decoration: none;
+          padding: 0 9px 7px 9px;
+          margin-right: 10px;
+          display: block;
+      }
+  }
+  li.active {
+      a,
+      a:hover,
+      a:focus {
+          border: 0px solid transparent;
+          border-bottom: 3px solid $hkex-red;
+          color: $hkex-blue;
+      }
+  }
+}
+.tabs-for-sidebar{
+  border-bottom: 2px solid $level8-color;
+  width: 100%;
+  @include susy-breakpoint(max-width $large) {
+    padding-left: 0;
+    text-align: center;
+  }
+
+
+}
+
+.tabs-for-sidebar{
+    @include susy-breakpoint(max-width $large) {
+      text-align: center !important;
+    }
+}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="33px" viewBox="0 0 36 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="53.1907685%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Mudule:-Tab-menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tab-menu-Behaviour" transform="translate(-746.000000, -602.000000)">
+            <g id="content" transform="translate(746.000000, 552.000000)">
+                <g id="Group" transform="translate(0.000000, 50.000000)">
+                    <rect id="Rectangle-2" fill="url(#linearGradient-1)" transform="translate(18.000000, 16.500000) scale(-1, 1) translate(-18.000000, -16.500000) " x="0" y="0" width="36" height="33"></rect>
+                    <path d="M7.88769681,13.1102545 L3.33335651,16.9071183 L-1.2209838,13.1102545 C-1.4226121,12.9425519 -1.72186938,12.9699591 -1.88972012,13.1709948 C-2.05786716,13.3721787 -2.03060808,13.6718804 -1.82927608,13.8397312 L3.02921037,17.8897785 C3.11720979,17.9632595 3.22535722,18 3.33335651,18 C3.44150394,18 3.54950323,17.9632595 3.63750265,17.8897785 L8.49598909,13.8397312 C8.6973211,13.6718804 8.72458018,13.3723268 8.55643314,13.1709948 C8.38798981,12.9693665 8.08976955,12.9421075 7.88769681,13.1102545 Z" id="Shape" fill="#E72742" transform="translate(3.333357, 15.500000) scale(-1, 1) rotate(-90.000000) translate(-3.333357, -15.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

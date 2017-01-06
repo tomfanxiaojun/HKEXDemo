@@ -1,0 +1,48 @@
+.blueBannerWithBtn {
+    position: relative;
+    padding: 0 30px;
+    float: left;
+    min-height: 100px;
+    width: 100%;
+    background-image: url('../images/etpIssuer-background.png');
+    &-text {
+        float: left;
+        text-transform: uppercase;
+        font-size: toRem(14);
+        line-height: 1.43;
+        color: $white;
+        width: 65%;
+        @include susy-breakpoint(max-width $large) {
+            width: 60%;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            text-align: center;
+            float: none;
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+        @include susy-breakpoint(min-width $tablet-start) {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+    }
+    &-btn {
+        float: right;
+        @include susy-breakpoint(max-width $medium) {
+            float: none;
+            text-align: center;
+            position: relative;
+            right: 0;
+            margin-bottom: 20px;
+        }
+        @include susy-breakpoint(min-width $tablet-start) {
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: 30px;
+        }
+    }
+
+}

@@ -1,0 +1,128 @@
+.faqWidget {
+    //for layout
+    margin-top: 20px;
+    //end
+    font-size: toRem(14);
+    color: $level1-color;
+    line-height: 1.43;
+    background-color: $white;
+    &__content {
+        padding-bottom: 20px;
+        &__searchBox-container {
+            padding-left: 20px;
+            padding-right: 20px;
+            @include susy-media($medium $large){
+                padding-left: 30px;
+                padding-right: 30px;
+            };
+        }
+        hr {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &-container {
+            padding: 10px 20px 5px 20px;
+            @include susy-media($medium $large){
+                padding: 15px 30px;
+            };
+            span {
+                font-weight: normal !important;
+            }
+            &:nth-child(odd) {
+                background-color: #f2f6f8;
+            }
+        }
+        &-item {
+            list-style-type: none;
+            margin-left: -40px;
+            margin-top: 0;
+            margin-bottom: 0;
+            li a {
+                display: inline-block;
+                line-height: 15px;
+                width: 100%;
+            }
+            li a span {
+                text-decoration: none;
+                max-width: 95%;
+                font-size: toRem(14);
+                line-height: 1.45;
+                color: $level1-color;
+                float: left;
+            }
+            li a i {
+                display: inline-block;
+                width: 6px;
+                height: 14px;
+                width: 8px\0;
+                height: 16px\0;
+                vertical-align: middle;
+                background: url("../images/arrow-right.svg") no-repeat 0 center;
+                float: right;
+                margin-top: 4px;
+                /*background-size: 88%;*/
+                @supports (-ms-ime-align:auto) {
+                    background-size: 100%;
+                }
+            }
+        }
+        .view-all {
+            padding-right: 20px;
+            text-align: right;
+            @include susy-media($medium $large){
+                padding-right: 30px;
+            };
+            a {
+                background: url("../images/arrow-right.svg") no-repeat 99% 15%;
+                font-size: toRem(14);
+                font-weight: bold;
+                padding: 0 10px 10px 0;
+                text-transform: capitalize;
+                text-decoration: none;
+                @supports (-ms-ime-align:auto) {
+                    background-size: 6%;
+                }
+            }
+        }
+    }
+}
+
+.fontsize-large{
+    .faqWidget {
+        &__content {
+            &-item {
+                li a i {
+                    margin-top: 5px;
+                }
+            }
+            .view-all{
+                a{
+                    background: url("../images/arrow-right.svg") no-repeat 99% 25%;   
+                }
+            }
+        }
+    }
+}
+.fontsize-small {
+    .faqWidget {
+        &__content {
+            &-container {
+                padding: 15px 30px 12px 30px;
+            }
+            &-item {
+                li a i {
+                    margin-top: 0px;
+                    background: url("../images/arrow-right.svg") no-repeat 0 0;
+                }
+            }
+            .view-all{
+                margin-top: 10px;
+                padding-right: 30px;
+                a{
+                    padding: 1px 10px 10px 0;
+                    background: url("../images/arrow-right.svg") no-repeat 99% 0;
+                }
+            }
+        }
+    }
+}

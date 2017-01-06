@@ -1,0 +1,86 @@
+<nav class="main-menu">
+
+
+    <div class="container main-menu__wrapper">
+        <ul class="main-menu__list level1">
+            <li class="sticky-menu__logo sticky-menu__non-fixed" title="HKEX"></li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link" title="data">market data</a>
+                <div class="mega-menu">
+                    <div class="container mega-menu__wrapper">
+                        {{> marketDataMenu}} {{> megaMenuHighlights megaMenuHighlights.optionOne}}
+                    </div>
+                </div>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link" title="products">products</a>
+                <i class="main-menu__mobile-direction"></i>
+                <div class="mega-menu">
+                    <div class="container mega-menu__wrapper">
+                        {{> productsMenu}} {{> megaMenuHighlights megaMenuHighlights.optionTwo}}
+                    </div>
+                </div>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link " title="services">services</a>
+                <div class="mega-menu">
+                    <div class="container mega-menu__wrapper">
+                        {{> servicesMenu}} {{> megaMenuHighlights megaMenuHighlights.optionThree}}
+                    </div>
+                </div>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link" title="listing">listing</a>
+                <i class="main-menu__mobile-direction"></i>
+                <div class="mega-menu">
+                    <div class="container mega-menu__wrapper">
+                        {{> listingMenu}} {{> megaMenuHighlights megaMenuHighlights.optionOne}}
+                    </div>
+                </div>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link" title="news">news</a>
+                <div class="mega-menu">
+                    <div class="container mega-menu__wrapper">
+                        {{> newsMenu}} {{> megaMenuHighlights megaMenuHighlights.optionThree}}
+                    </div>
+                </div>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link" title="stock connect">
+                    stock connect
+                    <i class="main-menu__item-connect-icon"></i>
+                </a>
+            </li>
+            <li class="sticky-menu__search sticky-menu__non-fixed">
+                <button class="sticky-menu__search-icon" title="search">Search</button>
+            </li>
+        </ul>
+        <div class="m-topbar">
+            <div class="m-topbar__side">
+                <div class="m-topbar__language">
+                    <a href="#" class="m-topbar__language-one" title="change language">繁</a>
+                    <a href="#" class="m-topbar__language-two" title="change language">简</a>
+                </div>
+                <ul class="m-topbar__nav">
+                    <li class="m-topbar__font-sizes font-size-options">
+                        <span>font size</span>
+                        <a class="m-topbar__link font-sizes--small" href="#" title="small size">a</a>
+                        <a class="m-topbar__link font-sizes--medium font-sizes--active" href="#" title="medium size">a</a>
+                        <a class="m-topbar__link font-sizes--large" href="#" title="large size">a</a>
+                    </li>
+                    <li data-toggle="nav-popover" class="m-topbar__about">
+                        <a class="m-topbar__link m-topbar__about-link" href="#" title="about">about</a>
+                    </li>
+                    <li data-toggle="nav-popover" class="m-topbar__related-sites">
+                        <a href="#" class="m-topbar__link m-topbar__related-sites-link" title="related sites">Related Sites</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sticky-menu__search-container sticky-menu__non-fixed">
+            <button class="sticky-menu__search-cancel" title="cancel">Cancel</button>
+            <input type="text" class="sticky-menu__search-box" title="search" placeholder="Search Website" />
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,93 @@
+.wl-nextstep{
+
+    &__wrapper{
+        @include  clearfix;
+        background: $white url('../images/wl-feature-bg.png') no-repeat;
+        background-size: 100% 100%;
+        padding: 28px 55px;
+        float: left;
+        width: 100%;
+        @include susy-breakpoint(max-width $large) {
+            padding: 28px 20px;
+            background: $level1-color;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            padding: 23px 22px 31px 22px;
+        }
+    }
+
+    &__btn{
+        margin-top: 0;
+        float: right;
+        width: 276px;
+        height: 68px;
+        @include susy-breakpoint(max-width $medium) {
+            float: none;
+            width: 100%;
+            margin-top: 22px;
+        }
+    }
+
+    &__text{
+        margin:0;
+        padding: 15px 0 0 0;
+        float: left;
+        color: $white;
+        font-size: toRem(21);
+        line-height: 1.57;
+        width: 53%;
+        @include susy-breakpoint(max-width $large) {
+            padding: 0 0 0 0;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            width: 100%;
+            float: none;
+            text-align: center;
+            padding: 0 30px;
+        }
+    }
+
+    @include susy-breakpoint(min-width $desktop-start) {
+        position: relative;
+        top: 275px;
+    }
+}
+
+.fontsize-large{
+    .wl-nextstep{
+        @include susy-breakpoint(min-width $large) {
+            top: 270px;
+        }
+        &__btn {
+          padding-left: 20px;
+        }
+        &__text{
+            padding: 0;
+            @include susy-breakpoint(max-width $large) {
+                width: 50%;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                width: 100%;
+            }
+        }
+    }
+}
+.fontsize-small{
+    .wl-nextstep{
+        @include susy-breakpoint(min-width $large) {
+            top: 273px;
+        }
+        &__btn {
+          padding-left: 61px;
+          padding-top: 26px;
+        }
+        &__text{
+            @include susy-breakpoint(max-width $large) {
+                padding: 25px 0 0 0;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                padding: 0 0 0 0;
+            }
+        }
+    }
+}

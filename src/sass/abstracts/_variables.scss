@@ -1,0 +1,105 @@
+// Susy setup -----------
+$total-columns : 12;
+$column-width: 65px;
+$gutter-width: 20px;
+
+$container: 1440px;
+// $desktop-mid: 1330px;
+$desktop-padding-remove: 1059px;
+$desktop-start: 1001px;
+$tablet-start: 768px;
+$small: 320px;
+$medium: 767px; // mobile end
+$large: 1000px; // tablet end
+
+$hkex-blue: #10416c;
+$hkex-red: #e72742;
+$hkex-gray: #9d9d9d;
+$hkex-paleblue: #e8eef3;
+$hkex-lightgrey: #f6f6f6;
+$digit-green: #24803e;
+$chart-green: #7ed321;
+$chart-red: #ea5758;
+$grey-color: #7d7d7d;
+$background-blue-1: #d1dde6;
+$background-blue-2: #899bac;
+$background-blue: #a1b4c5;
+$background-darkblue: #091f32;
+$button-gray: #d5e2e8;
+$white: #ffffff;
+$tag-selected: #f2f6f8;
+$table-hdr-active: #507494;
+$hkex-hightlight: #ffb205;
+$hkex-border-gray: #dadada;
+$hkex-gray-light: #e3e3e3;
+$hkex-gray-deep: #4a4a4a;
+$hkex-title-blue:#10416c;
+$tabs: #9d9d9d;
+$left-menu-even: #577c9d;
+$left-menu-odd: #507494;
+$download-text-color: #3C7EB8;
+$list-menu-hover:#e8eef3;
+$hkex-subTitle:#6a6a6a;
+$background-gray: #eaf0f3;
+$hkex-border-gray:#cbcbcb;
+$checkbox-border-color: #d3d3d3;
+$border-gray: #c7d6dd;
+$hkex-blue-1: #13426b;
+$tab-hover: #b5c7d8;
+$tab-color: #777777;
+$tab-normal: #636363;
+$hkex-red-1: #f4364c;
+$separate-line: #d3d3d3;
+$separate-line2: #d5e2e8;
+$category: #444444;
+$sticky-header-border: #a1b5c6;
+$tag-bg-color:#ffb205;
+$tag-triger-color:#ff8305;
+$tweeter-date: #a5a5a5;
+$vendorList-NA: #a5a5a5;
+$checkedMark-box-shadow: #4ab1e2;
+
+// color settings
+$level1-color: $hkex-blue;
+$level2-color: $hkex-red;
+$level3-color: $hkex-paleblue;
+$level4-color: $hkex-lightgrey;
+$level5-color: $background-blue;
+$level6-color: $grey-color;
+$level7-color: $hkex-gray;
+$level8-color: $hkex-gray-light;
+$level9-color: $background-blue-1;
+$level10-color: $background-blue-2;
+$level11-color: $background-gray;
+$level12-color: $hkex-blue-1;
+$level13-color: $tab-color;
+$level14-color: $tweeter-date;
+$level15-color: $category;
+
+// z-index settings
+$z-index-market-overview-arrow-button: 10;
+$z-index-video-control-bar: 10;
+$z-index-header-logo: 10;
+$z-index-header-drop-down: 30;
+$z-index-stock-quote-tablet: 20;
+$z-index-mega-menu: 20;
+$z-index-main-menu-backgroud-tablet-mobile: 60;
+$z-index-main-menu-tablet-mobile: 70;
+$z-index-fixed-top-nav: 60;
+$z-index-fixed-top-nav-search: 70;
+$z-index-popover: 999;
+$z-index-step-circle: 10;
+$z-index-monthly-bulletin-filter-date: 16;
+$z-index-drop-down-select-item: 15;
+$z-index-scroll-bar: 10;
+$z-index-table-sticky-header: 15;
+$z-index-scroller-tab-left-arrow: 1;
+$z-index-sticky-header-mobile-tablet: 55;
+$z-index-sticky-header-main-menu: 65;
+$z-index-mobile-search-layer: 67;
+$z-index-map-text: 1;
+
+// components
+$section-title-left-border-widht:4px;
+$section-panel-padding:30px;
+$section-left-panel-padding:20px;

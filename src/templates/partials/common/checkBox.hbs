@@ -1,0 +1,21 @@
+{{#each this}}
+<div class="filter__checkBox filter__checkBox--custom">
+  <span class="filter__checkBox__title">{{filterType}}</span>
+  <ul class="filter__checkBox__list">
+    {{#each options}}
+      <li class="filter__checkBox__item">
+          <div class="filter__checkBox__wrapper">
+            {{#if displayValue}}
+              <input type="checkbox" name="{{groupName}}" id="{{id}}" value="{{value}}" data-value="{{displayValue}}" tabindex="-1">
+            {{else}}
+              <input type="checkbox" name="{{groupName}}" id="{{id}}" value="{{value}}" data-value="{{value}}" tabindex="-1">
+            {{/if}}
+            <label for="{{id}}" tabindex="0" class="filter__checkBox__tab-js">
+                {{value}}
+            </label>
+          </div>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+{{/each}}

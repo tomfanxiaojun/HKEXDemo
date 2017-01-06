@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="7px" viewBox="0 0 14 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Key-Templates-tk3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu---Mobile-open-L2" transform="translate(-218.000000, -122.000000)" fill="#E32641">
+            <g id="Group-2">
+                <g id="data-red">
+                    <path d="M222.132305,119.934819 L226.688542,125.400028 L222.132305,130.865236 C221.931062,131.10719 221.963951,131.466299 222.205194,131.66772 C222.446614,131.869496 222.806257,131.836785 223.007677,131.595187 L227.867734,125.765003 C227.955911,125.659404 228,125.529627 228,125.400028 C228,125.270251 227.955911,125.140652 227.867734,125.035052 L223.007677,119.204869 C222.806257,118.96327 222.446792,118.930559 222.205194,119.132336 C221.96324,119.334468 221.930529,119.692332 222.132305,119.934819" id="Shape" transform="translate(225.000000, 125.400028) rotate(90.000000) translate(-225.000000, -125.400028) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

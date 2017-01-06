@@ -1,0 +1,158 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+/*
+* Button Styles -- colors
+*/
+.btn-red {
+   @include btn;
+    background-color: $hkex-red;
+    color: $white;
+    &:hover, &:focus, &:active {
+        color: $white;
+    }
+}
+
+.btn-red-two-lines {
+  .btn-for-2lines{
+    @include btn-two-lines;
+    color: $white;
+    &:hover, &:focus, &:active {
+        color: $white;
+    }
+  }
+    max-width: 200px;
+    background-color: $hkex-red;
+    display: inline-block;
+}
+
+.btn-red-big{
+    @include btn;
+    padding: 22px 28px 24px 34px;
+    font-size: toRem(18);
+    letter-spacing: 1px;
+    color: $white;
+    background-color: $level2-color;
+    &:hover, &:visited, &:focus{
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.btn-blue {
+    @include btn;
+    background-color: $hkex-title-blue;
+    color:$white;
+    &:hover, &:focus, &:active{
+        color: $white;
+    }
+}
+.btn-gray {
+    @include btn;
+    background-color: $button-gray;
+    color: $hkex-blue;
+    &:hover, &:focus, &:active {
+        color: $hkex-blue;
+    }
+}
+
+.btn-white {
+    @include btn;
+    background-color: $white;
+    color: $hkex-blue;
+    border: 1px solid $checkbox-border-color;
+    &:hover, &:focus, &:active {
+        color: $hkex-blue;
+    }
+}
+
+.btn-disable {
+    @include btn;
+    background-color: $hkex-border-gray;
+    color:$white;
+    &:hover, &:focus, &:active {
+        color: $white;
+    }
+}
+
+
+/*
+* Set white right arrow as a background
+*/
+.btn-arrow {
+    &::before {
+        content: "";
+        width: 14.8px;
+        height: toRem(12);
+        margin-left: 14.6px;
+        margin-bottom: 2%;
+        display: inline-block;
+        vertical-align: middle;
+        background:  url(../images/arrow-right-white.svg) no-repeat right center;
+        background-size: contain;
+        float: right;
+        margin-top: 2px;
+    }
+}
+
+.btn-cross {
+    &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        margin-left: 14.6px;
+        margin-bottom: 2%;
+        display: inline-block;
+        vertical-align: middle;
+        background:  url(../images/multiply.svg) no-repeat right center;
+        background-size: contain;
+    }
+}
+
+
+button:focus{
+    outline: 2px dotted $level1-color;
+}
+
+.btn-print-preview{
+    text-transform: capitalize;
+    font-size: toRem(14);
+    padding: 15px 20px 15px 22px;
+    background-color: $hkex-title-blue;
+    color:$white;
+    cursor: pointer;
+    &:hover, &:focus, &:active{
+        color: $white;
+        text-decoration: none;
+    }
+    &::before{
+        content: "";
+        background-image: url('../images/print_preview.png');
+        display: inline-block;
+        height: 22px;
+        width: 29px;
+        position: relative;
+        top: 6px;
+        left: -6px;
+    }
+}
+
+.btn-align-middle{
+    text-align: center;
+}
+.fontsize-small{
+    .btn-print-preview{
+        &::before{
+            top: 8px;
+        }
+    }
+    .btn-red-two-lines{
+      max-width: 151px;
+    }
+}
+
+.fontsize-large{
+  .btn-red-two-lines{
+    max-width: 230px;
+  }
+}

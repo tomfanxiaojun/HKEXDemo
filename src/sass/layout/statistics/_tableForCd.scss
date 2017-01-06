@@ -1,0 +1,27 @@
+.cd-table {
+  .table-style {
+    width: 100% ;
+    tfoot {
+      display: none;
+    }
+    .freeze-col-context {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .tablesorter-header-inner {
+      .freeze-col-context {
+      padding-top: 24px;
+        padding-bottom: 28px;
+      }
+    }
+    .fixed-freeze-tb-parent {
+      overflow-y: hidden;
+    }
+    .is-fix-col {
+      @include susy-breakpoint(max-width $medium) {
+        max-width: 33%;
+        border-right: none;
+      }
+    }
+  }
+}

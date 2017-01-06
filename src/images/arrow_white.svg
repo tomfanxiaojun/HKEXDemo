@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="11px" viewBox="0 0 5 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="News" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-164.000000, -959.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(72.000000, 394.000000)">
+                <g id="Group-4" transform="translate(0.000000, 300.000000)">
+                    <g id="Group-21" transform="translate(0.000000, 150.000000)">
+                        <path d="M99.0543403,117.943611 L94.5,121.740475 L89.9456597,117.943611 C89.7440314,117.775908 89.4447741,117.803316 89.2769234,118.004351 C89.1087763,118.205535 89.1360354,118.505237 89.3373674,118.673088 L94.1958539,122.723135 C94.2838533,122.796616 94.3920007,122.833357 94.5,122.833357 C94.6081474,122.833357 94.7161467,122.796616 94.8041461,122.723135 L99.6626326,118.673088 C99.8639646,118.505237 99.8912237,118.205683 99.7230766,118.004351 C99.5546333,117.802723 99.256413,117.775464 99.0543403,117.943611 Z" id="Shape" transform="translate(94.500000, 120.333357) rotate(-90.000000) translate(-94.500000, -120.333357) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

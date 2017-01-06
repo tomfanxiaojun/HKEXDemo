@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>inner nav dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile-Inner-Nav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Inner-nav" transform="translate(-270.000000, -55.000000)">
+            <g id="inner-nav-dropdown" transform="translate(270.000000, 55.000000)">
+                <g id="Group">
+                    <rect id="Rectangle-8" fill="#507494" x="0" y="0" width="50" height="50"></rect>
+                    <polygon id="Triangle-1" fill="#FFFFFF" transform="translate(25.000000, 25.500000) scale(1, -1) translate(-25.000000, -25.500000) " points="19 30 31 30 25 21"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

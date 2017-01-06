@@ -1,0 +1,29 @@
+.wl-contact{
+
+   
+    @include susy-breakpoint(min-width $desktop-start) {
+        position: relative;
+        top: -131px;
+    }
+    @include susy-breakpoint(max-width $large) {
+        margin-top: 20px;
+        float: left;
+    }
+}
+
+.fontsize-large{
+    .wl-contact{
+        @include susy-breakpoint(min-width $large) {
+            top: -153px;
+        }
+    }
+}
+.fontsize-small{
+    .wl-contact{
+        @include susy-breakpoint(min-width $large) {
+            top: -124px;
+        }
+        
+        
+    }
+}

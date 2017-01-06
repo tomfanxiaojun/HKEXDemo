@@ -1,0 +1,646 @@
+.main-menu {
+    background-color: $level1-color;
+    max-height: 41px;
+
+    @include susy-breakpoint(min-width $desktop-start){
+        display: block !important;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    @include susy-breakpoint(max-width $large) {
+        background-color: #fff;
+        @include clearfix;
+    }
+
+    .main-menu__wrapper {
+        @include susy-breakpoint(max-width $large) {
+            display: inline-block;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            /* hides the navigation for mobile*/
+            margin: 0;
+            background-color: #EAEAEA;
+            width: span(6 of 12);
+            min-height: 100%;
+            transition: left .5s;
+            -webkit-transition: left .5s;
+            z-index: $z-index-main-menu-tablet-mobile;
+            overflow: auto;
+            height: 100%;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            min-width: span(9 wide of 12);
+        }
+    }
+    // main-menu__list
+    &__list {
+        list-style: none;
+        margin: 0 0 0 15px;
+        padding: 0;
+
+        @include susy-breakpoint(max-width $large) {
+            margin-left: 0;
+        }
+    }
+    // main-menu__item
+    &__item {
+        float: left;
+        @include susy-breakpoint(min-width $desktop-start) {
+            &:hover {
+                background-color: $level2-color;
+            }
+            &:hover > .mega-menu {
+                display: block;
+            }
+        }
+        @include susy-breakpoint(max-width $large) {
+            float: none;
+            background: $level1-color url(../images/left-arrow-white.svg) no-repeat 93% center;
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
+
+    //main-menu__item-connect-icon
+    &__item-connect-icon {
+        background: url('../images/icon-connect.png') no-repeat center center;
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        padding-right: 15px;
+    }
+
+    // main-menu__item-active
+    &__item--active {
+        background-color: $level2-color;
+    }
+    // main-menu__link
+    &__link {
+        font-size: toRem(14);
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 11.5px 61px;
+        display: inline-block;
+
+        @include susy-breakpoint(max-width 1350px) {
+            padding-left: 53px;
+            padding-right: 53px;
+        }
+
+        @include susy-breakpoint(max-width 1250px) {
+            padding-left: 41px;
+            padding-right: 39px;
+        }
+
+        @include susy-breakpoint(max-width 1100px) {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        &:focus {
+            color: #fff;
+        }
+        @include susy-breakpoint(max-width $large) {
+            text-align: left;
+            padding: 15px 0 15px 22px;
+            display: inline-block;
+
+            &:only-child {
+                background-color: $level1-color;
+                display: block;
+            }
+        }
+
+        &:hover, &:active, &:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+
+.mega-menu {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: $z-index-mega-menu;
+    border-bottom: 1px solid $level2-color;
+
+    ul {
+        @include susy-breakpoint(min-width $desktop-start) {
+            display: block !important;
+        }
+    }
+
+    @include susy-breakpoint(max-width $large) {
+        display: block;
+        position: relative;
+        border: none;
+    }
+    // mega-menu__wrapper
+    &__wrapper {
+        padding: 31px 30px 42px 30px;
+        @include susy-breakpoint(max-width $large) {
+            padding: 0;
+        }
+    }
+    //mega-menu__level2-text
+    &__level2-text {
+        margin: 0;
+        text-transform: uppercase;
+        color: $level1-color;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: toRem(13);
+        @include susy-breakpoint(max-width $large) {
+            padding: 11px 0 12px 35px;
+            display: inline-block;
+        }
+    }
+    // mega-menu__highlights
+    &__highlights {
+        list-style: none;
+        margin: 21px 0 0 0;
+        padding: 0;
+        @include clearfix;
+        @include susy-breakpoint(max-width $large) {
+            display: none;
+        }
+    }
+    // mega-menu__hihglights-item
+    &__highlights-item {
+        float: left;
+        @include gallery(4 of 12);
+    }
+    //mega-menu__highlights-image
+    &__highlights-image {
+        width: span(2 of 4);
+    }
+    //mega-menu__highlights-content
+    &__highlights-content {
+        width: span(2 of 4 last);
+        float: right;
+    }
+    //mega-menu__highlights-link
+    &__highlight-link {
+        font-size: toRem(13);
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        color: $level1-color;
+    }
+    //mega-menu__highlight-text
+    &__highlight-text {
+        margin: 0;
+        padding: 10px 0 0 0;
+        font-size: toRem(12);
+        line-height: 1.5;
+        font-weight: 400;
+        display: inline-block;
+    }
+    // mega-menu__divider
+    &__divider {
+        margin: 8px 0 11px 0;
+        border-bottom: 1px solid $level2-color;
+        width: span(3 of 4);
+        @include susy-breakpoint(max-width $large) {
+            display: none;
+        }
+    }
+    &__divider-three {
+        margin: 8px 0 11px 0;
+        border-bottom: 1px solid $level2-color;
+        width: span(6 of 7);
+        @include susy-breakpoint(max-width $large) {
+            display: none;
+        }
+    }
+    &__sub-title {
+        margin-bottom: 30px;
+        a {
+            float: left;
+            text-transform: capitalize;
+        }
+        &-three {
+            width: span(2 of 6);
+        }
+        &-two {
+            width: span(2 of 4);
+        }
+    }
+}
+
+.mega-menu-one {
+    padding: 0;
+    list-style: none;
+    @include clearfix;
+    @include susy-breakpoint(max-width $large) {
+        // display: none;
+    }
+
+    // mega-menu-one__search
+    &__search {
+        @include susy-breakpoint(max-width $large) {
+            display: none;
+        }
+    }
+    //mega-menu-one__search-input
+    &__search-input {
+        outline: none;
+        width: 95%;
+        height: 44px;
+        margin-top: 21px;
+        margin-right: 27px;
+        padding-left: 35px;
+        border: 1px solid $level1-color;
+        color: $level1-color;
+        font-size: 14px !important;
+        background: url(../images/search-icon-blue.svg) no-repeat 9px center;
+        -webkit-appearance: none;
+        border-radius: 0;
+        @include placeholder {
+            color: $level6-color;
+            font-weight: 400;
+            /*line-height: 2.3;*/
+            /*font-size: 12px;*/
+        }
+        @include susy-breakpoint(max-width $large) {
+            /*display: none;*/
+            border: none;
+            border-bottom: 1px solid $hkex-blue;
+            margin: 0 0 15px 35px;
+            width: 80%;
+            background-position-x: left;
+            height: 32px;
+            &:-moz-placeholder {
+                line-height: 32px;
+            }
+            &::-moz-placeholder {
+                line-height: 32px;
+            }
+        }
+    }
+    &__search-input::-ms-clear {
+        display: none;
+    }
+
+    //mega-menu-one__level3-list
+    &__level3-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @include susy-breakpoint(max-width $large) {
+            // display: none;
+            border-top: 1px solid #d1dde6;
+        }
+    }
+
+    .forMobileQuoteLookup {
+        @include susy-breakpoint(max-width $large) {
+            background: none !important;
+            a, a:active {
+                text-decoration: none;
+                color: $hkex-blue !important;
+            }
+        }
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: $z-index-main-menu-backgroud-tablet-mobile;
+    display: none;
+}
+
+.show-menu .main-menu__wrapper {
+    left: 0;
+}
+
+@include susy-breakpoint(max-width $large) {
+    .show-menu .overlay {
+        display: block;
+    }
+
+    .main-menu .level2,
+    .main-menu .level3,
+    .main-menu .level4 {
+        display: none;
+    }
+    .level1 li.current {
+        background: $level2-color url(../images/down-arrow-white.svg) no-repeat 93% 20px;
+    }
+    .level2 li {
+        background: #fff url(../images/left-arrow-blue.svg) no-repeat 93% center;
+    }
+
+    .current.mega-nav__level2-item > a:first-child {
+        color: $level2-color;
+    }
+    .level2 {
+        li > a:only-child {
+            display: block;
+            margin-right: 0;
+            background-color: #fff;
+        }
+        li.current {
+            background: url(../images/down-arrow-red.svg) no-repeat 93% 16px;
+            .mega-menu__level2-text {
+                color: $level2-color;
+            }
+        }
+    }
+}
+
+.sticky-menu {
+    @include susy-breakpoint(min-width $desktop-start){
+        position: fixed;
+        top: 0;
+        z-index: $z-index-fixed-top-nav;
+        width: 100%;
+        max-height: 60px;
+        transition: height 1s;
+    }
+    &__non-fixed {
+        display: none;
+    }
+    &__logo {
+        @include susy-breakpoint(min-width $desktop-start){
+            float: left;
+            background: url(../images/logo.png) no-repeat center;
+            background-size: contain;
+            width: 45px;
+            height: 20.9px;
+            margin: 19.5px 34px 0px 0px;
+        }
+    }
+    &__search {
+        @include susy-breakpoint(min-width $desktop-start){
+            float: right;
+            width: 18px;
+            height: 18px;
+            margin: 21px 8px 0px 0px;
+        }
+        @include susy-breakpoint(max-width $large){
+            display: none;
+        }
+    }
+    &__search-icon {
+        @include susy-breakpoint(min-width $desktop-start){
+            float: right;
+            width: 18px;
+            height: 18px;
+            background: url(../images/search-icon.svg) no-repeat;
+            background-size: 18px 18px;
+            cursor: pointer;
+            border: none;
+            font-size: 0;
+            outline: none;
+        }
+
+        @include susy-breakpoint(max-width $large) {
+            display: none;
+        }
+    }
+    &__search-cancel {
+        @include susy-breakpoint(min-width $desktop-start){
+            width: 20px;
+            height: 20px;
+            background: url(../images/search-cancel.svg) no-repeat;
+            background-size: 16px 16px;
+            cursor: pointer;
+            border: none;
+            font-size: 0;
+            outline: none;
+            float: right;
+            margin-top: 12px;
+        }
+    }
+    &__search-box {
+        @include susy-breakpoint(min-width $desktop-start){
+            padding: 0;
+            margin-right: 44.5px;
+            margin-top: 14px;
+            border: none;
+            outline: none;
+            background-color: $level1-color;
+            @include font-type;
+            font-size: toRem(12);
+            color: $level9-color;
+            padding-bottom: 2px;
+            cursor: text;
+            width: 850px;
+            border-bottom: 1px solid #FFF;
+            float: right;
+            letter-spacing: 0.5px;
+            width: 90%;
+        }
+        &::-ms-clear {
+            display: none;
+        }
+    }
+    &__search-container {
+        @include susy-breakpoint(min-width $desktop-start){
+            position: absolute;
+            right: 30px;
+            padding-top: 8px;
+            background-color: $level1-color;
+            z-index: $z-index-fixed-top-nav-search;
+            width: 90%;
+        }
+        @include susy-breakpoint(max-width $desktop-padding-remove) {
+            right: 0;
+        }
+        @include susy-breakpoint(max-width $large){
+            display: none;
+        }
+    }
+    &__parent-relative {
+        @include susy-breakpoint(min-width $desktop-start){
+            position: relative;
+        }
+    }
+    .main-menu__link {
+        padding: 21px 52px;
+
+        @include susy-breakpoint(max-width 1350px) {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        @include susy-breakpoint(max-width 1250px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        @include susy-breakpoint(max-width 1100px) {
+            padding-left: 28px;
+            padding-right: 28px;
+        }
+    }
+}
+
+.nav-placeholder {
+    margin-bottom: 39px;
+}
+
+.fontsize-large{
+    .main-menu__link{
+        padding: 9px 52px;
+
+        @include susy-breakpoint(max-width 1350px) {
+            padding-left: 44px;
+            padding-right: 44px;
+        }
+
+        @include susy-breakpoint(max-width 1250px) {
+            padding-left: 31px;
+            padding-right: 31px;
+        }
+
+        @include susy-breakpoint(max-width 1100px) {
+            padding-left: 26px;
+            padding-right: 26px;
+        }
+    }
+    .sticky-menu{
+
+        @include susy-breakpoint(min-width $desktop-start){
+            max-height: 61px;
+        }
+        .main-menu__list{
+            .main-menu__link{
+                padding: 20px 46px;
+
+                @include susy-breakpoint(max-width 1350px) {
+                    padding-left: 37px;
+                    padding-right: 37px;
+                }
+
+                @include susy-breakpoint(max-width 1250px) {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                @include susy-breakpoint(max-width 1100px) {
+                    padding-left: 22px;
+                    padding-right: 22px;
+                }
+
+            }
+        }
+        .sticky-menu__search-container{
+            height: 41px;
+        }
+
+        .sticky-menu__search-cancel{
+            background-size: 20px 20px;
+            height: 23px;
+        }
+        .sticky-menu__search-icon{
+            background-size: 20px 20px;
+            width: 23px;
+            height: 23px;
+        }
+
+    }
+    .level1 li.current {
+        background-position-y: 16px;
+    }
+    .level2 li.current {
+        background-position-y: 17px;
+    }
+
+
+}
+
+.fontsize-small{
+    .main-menu__link{
+        padding: 10px 70px;
+
+        @include susy-breakpoint(max-width 1350px) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        @include susy-breakpoint(max-width 1250px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include susy-breakpoint(max-width 1100px) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+    }
+    .sticky-menu{
+        .sticky-menu__search-cancel{
+            background-size: 12px 12px;
+        }
+        .sticky-menu__search-icon{
+            background-size: 12px 12px;
+        }
+        .sticky-menu__search-container{
+            height: 40px;
+        }
+        .main-menu__link{
+            padding: 21px 70px;
+
+            @include susy-breakpoint(max-width 1350px) {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            @include susy-breakpoint(max-width 1250px) {
+                padding-left: 48px;
+                padding-right: 48px;
+            }
+
+            @include susy-breakpoint(max-width 1100px) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+    .main-menu__item {
+        line-height: 18px;
+        @include susy-breakpoint(max-width $large){
+            line-height: 10px;
+        }
+    }
+    .level1 li.current {
+        background-position-y: 17px;
+    }
+    .level2 li.current {
+        background-position-y: 13px;
+    }
+}
+
+
+.main-menu__item:nth-child(4) > .mega-menu {
+    //  display: block;
+}
+
+.main-menu-sticky {
+    @include susy-breakpoint(max-width $large) {
+        position: fixed;
+        width: 100%;
+        z-index: $z-index-sticky-header-main-menu;
+        top: 0;
+    }
+}

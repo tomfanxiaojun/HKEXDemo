@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+<head>
+   {{>header title="Common Components Sample"}}
+</head>
+<body>
+    <div class="ticker-messages"></div>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+    <div id="skip-to-content"></div>
+    <!-- end: anchor only for accessibility -->
+    {{> bannerMonthlyBulletin chinaDimension}}
+    <!-- end of banner section -->
+    <div class="container content-container">
+        <nav class="nav-side left-menu">
+            {{> nonCmsLeftNav}}
+
+            <!-- breadcrumb -->
+            {{> monthlyBulletinBreadcrumb chinaDimensionBreadcrumb}}
+        </nav>
+        <!-- end of nav side -->
+
+        <main class="nav-content-wrap">
+            <section class="sample-calendar">
+              {{> nonCmsCalendarContent}}
+            </section>
+        </main>
+        <!-- end of main content -->
+        <aside class="nav-side side-content">
+              {{> pollWidgetCheckbox}}
+              {{> pollWidgetRadio2}}
+              {{> faqWidget}}
+        </aside>
+        <!-- end of side bar -->
+    </div>
+
+    <footer>
+        <div class="container">
+        {{> footer}}
+        </div>
+    </footer>
+    {{> homepageTickers }}
+    {{> scripts}}
+
+</body>
+</html>

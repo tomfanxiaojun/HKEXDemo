@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+
+<head>
+	{{>header title="Listing Process"}}
+</head>
+
+<body>
+	{{> topbar}}
+	<!-- end of header -->
+	{{> navigation2}}
+	<!-- end of nav -->
+	<div id="skip-to-content"></div>
+	<!-- end: anchor only for accessibility -->
+	{{> listBanner listing.listingProcess}} {{> listingBreadcrumb listingBreadcrumb.gettingStarted}}
+	<!-- end of banner section -->
+
+	<div class="container">
+		<div class="l-full-width">
+			<div class="ls-process__container">
+				{{> listingProcessFeaturedText}}
+
+				<div class="ls-process__step-wrapper">
+					<div class="listing-step">
+						{{> listProcessStep1To2}}
+            {{> listProcessStep3To4}}
+            {{> listProcessStep5To6}}
+					</div>
+				</div>
+			</div>
+
+			{{> listingProcessQuickLinks}}
+		</div>
+		<!-- end of main content -->
+	</div>
+
+	<footer>
+		<div class="container">
+			{{> footer}}
+		</div>
+	</footer>
+
+	{{> scripts}}
+
+
+</body>
+
+</html>

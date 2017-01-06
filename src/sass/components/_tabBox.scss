@@ -1,0 +1,79 @@
+.tab-box {
+    width: 100%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    @include susy-breakpoint(max-width $medium) {
+        width: 100%;
+        margin-bottom: 0;
+        padding-right: 0;
+        border-bottom: solid 1px $level5-color;
+    }
+    &__title {
+        height: 100px;
+        @include susy-breakpoint(max-width $large) {
+            height: 90px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            min-height: 60px;
+            height: auto;
+        }
+        vertical-align: middle;
+        a {
+            @include clearfix;
+            height: 100%;
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            padding: 20px 12% 20px 0;
+            @include susy-breakpoint(max-width $medium) {
+                padding: 18px 12% 18px 0;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                padding: 5px 12% 5px 0;
+            }
+            line-height: 1.31;
+        }
+        a[aria-expanded='false'] {
+            background: url("../images/triangle-1.svg") no-repeat 92%;
+            background-size: 8px 6px;
+            color: $white;
+            background-color: $level1-color;
+        }
+        a[aria-expanded='true'] {
+            background: url("../images/arrow-up.svg") no-repeat 92%;
+            background-size: 8px 6px;
+            color: $level1-color;
+            background-color: $level3-color;
+            border-bottom: 4px solid $level2-color;
+        }
+        &--text {
+            text-transform: uppercase;
+            font-size: toRem(18);
+            font-weight: bold;
+            display: inline-block;
+            width: 65%;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            @include susy-breakpoint(max-width $large) {
+                width: 60%;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                width: 65%;
+            }
+        }
+    }
+    &__icon {
+        display: inline-block;
+        padding: 0 13px 0 20px;
+        @include susy-breakpoint(max-width $medium) {
+            width: 70px;
+            height: 50px;
+        }
+    }
+}
+.fontsize-large{
+  .tab-box__title--text{
+    font-size: 18px;
+  }
+}

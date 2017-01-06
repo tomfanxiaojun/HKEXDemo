@@ -1,0 +1,113 @@
+.agenda__events {
+    margin-left: 30px;
+    margin-right: 30px;
+    // mobile layout
+    @include susy-media(max-width $medium) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .date-data-list {
+        margin-top: 22px;
+    }
+    .btn-blue {
+        padding: 9px 11px 10px 15px;
+    }
+    span[class^='tag'] {
+        margin-left: 0px;
+    }
+    // mobile layout
+    @include susy-media(max-width $medium) {
+        span[class*='triangle']:before {
+            display: none;
+        }
+    }
+    .tag-first {
+        margin-left: -10px !important;
+    }
+    &--all-events {
+        .date-data-list__section--content {
+            padding-top: 16px;
+            // mobile layout
+            @include susy-media(max-width $medium) {
+                padding-top: 0px;
+            }
+        }
+        &-base-info {
+            margin-top: 24px;
+            &-date {
+                font-size: toRem(14);
+                font-weight: bold;
+                color: #777777;
+                padding-left: 12px;
+                // mobile layout
+                @include susy-media(max-width $medium) {
+                    display: block;
+                    padding-top: 14px;
+                }
+            }
+            &-load-previous {
+                float: right;
+                // mobile layout
+                @include susy-media(max-width $medium) {
+                    float: none;
+                    display: block;
+                    text-align: center;
+                }
+                color: $level1-color;
+                font-size: toRem(14);
+            }
+        }
+        &-type:not(:last-child) {
+            font-size: toRem(14);
+            color: $level1-color;
+            padding-bottom: 10px;
+            border-bottom: solid 1px #d8d8d8;
+        }
+        &-type:last-child {
+            margin-bottom: 26px;
+        }
+        &-ipo-type {
+            margin-right: 17px;
+            // mobile layout
+            @include susy-media(max-width $medium) {
+                display: block;
+                font-weight: bold;
+            }
+        }
+        .collapse-container {
+            margin-top: 17px;
+            .date-data-list__section--base-info {
+                font-weight: normal;
+            }
+            .btn-blue {
+                color: $white;
+                margin-top: 14px;
+            }
+        }
+    }
+}
+
+.fontsize-small {
+    .agenda__events {
+        .tag-first {
+            margin-left: -6px !important;
+        }
+    }
+}
+
+.fontsize-large {
+    .agenda__events {
+        .tag-first {
+            margin-left: -12px !important;
+        }
+    }
+}
+
+// mobile layout
+@include susy-media(max-width $medium) {
+    .agenda__events {
+        .tag-first {
+            margin-left: 0px !important;
+        }
+    }
+}

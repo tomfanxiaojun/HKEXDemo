@@ -1,0 +1,38 @@
+.download {
+    color: $hkex-blue;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: toRem(14);
+    &:link {
+        text-decoration: none;
+    }
+    &:before {
+        margin-right: 8px;
+        content: '';
+        width: 10px;
+        height: 12px;
+        background: url('../images/download.svg');
+        display: inline-block;
+        background-size: 10px 12px;
+    }
+    & > span {
+        color: #3c7eb8;
+        text-decoration: underline;
+    }
+    &[href$="pdf"]:after {
+        content: url('../images/pdf.png');
+        margin-left: 5px;
+    }
+}
+span.pdf::after{
+    content: "";
+    background: url('../images/pdf.png') no-repeat;
+    margin-left: 5px;
+    margin-right: 2px;
+    width: 23px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+
+}

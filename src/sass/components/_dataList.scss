@@ -1,0 +1,37 @@
+.data-list {
+	font-size: 12px;
+	color: $hkex-blue;
+	dl {
+		width: 100%;
+		display: table;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	dl:nth-of-type(odd) {
+		background-color: $tag-selected;
+	}
+	dl:nth-of-type(even) {
+		background-color: $white;
+	}
+	dt, dd {
+		padding: 14px 0 14px 30px;
+	}
+	dt {
+		display: table-cell;
+		width: 30%;
+		font-weight: bold;
+		@include susy-media(max-width $medium) {
+			display: block;
+			width: 100%;
+		}		
+	}
+	dd {
+		width: 100%;
+		margin-left: 0;
+		padding-right: 30px;
+		@include susy-media(max-width $medium) {
+			width: 100%;
+			padding-top: 0;
+		}			
+	}
+}

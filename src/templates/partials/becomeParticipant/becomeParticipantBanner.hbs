@@ -1,0 +1,29 @@
+<section class="banner">
+    <div class="banner__container">
+        <div class="banner__background top-menu" style="background-image: url(../images/inner-banner.png);">
+            <div class="container banner__breadcrumb">
+                <ul>
+                    <li><a href="#">{{title}}</a></li>
+                    {{#if subTitle}}
+                        <li><a href="#">{{subTitle}}</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+            <h1 class="container banner__pageheading">{{headerText}}</h1>
+            <div class="top-menu__title menu-title">
+                <h2 id="menuTitle">inner navigation</h2>
+                <div class="nav-icon">
+                    <img class="icon-nav" src="images/menu.svg" alt="Navigation Icon" />
+                    <img class="nav-close" src="images/CANCEL.svg" alt="Navigation Icon" />
+                </div>
+            </div>
+            <div class="top-menu__wrapper">
+                <ul class="container banner__menu top-menu__items">
+                    <li class="{{className1}}"><a href="becomeParticipant.html">GETTING STARTED</a></li>
+                    <li class="{{className2}}"><a href="findPartner.html">Find a Partner</a></li>
+                    <li class="{{className3}}"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

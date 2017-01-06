@@ -1,0 +1,71 @@
+.top5Stocks{
+    .top-stocks-section{
+        margin-bottom: 20px;
+        margin-top: 0;
+        .view-all {
+            background: url(../images/arrow-right.svg) no-repeat 97% 11%;
+            text-align: right;
+            font-size: toRem(12);
+            padding: 0px 17px 10px 0px;
+            text-transform: capitalize;
+
+            @include susy-breakpoint(max-width $large) {
+                display: none;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                display: block;
+                background: url(../images/arrow-right.svg) no-repeat 98% 11%;
+            }
+
+        }
+        .right-panel-sections-label-left{
+            display: none;
+            @include susy-breakpoint(max-width $large) {
+                display: block;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                display: none;
+            }
+        }
+        .right-panel-sections-label-right{
+            @include susy-breakpoint($medium $large) {
+                max-width: 85%;
+            }
+            div.arrow-down-red{
+                @include susy-breakpoint(min-width $desktop-start) {
+                    margin-right: 20px;
+                }
+            }
+            @include susy-breakpoint(max-width $large) {
+                h2 {
+                    color: $white;
+                }
+            }
+        }
+        .popover__content{
+          @include susy-breakpoint(min-width $desktop-start) {
+            &:after,&:before {
+              left: 62%;
+            }
+          }
+        }
+    }
+}
+.fontsize-large{
+  .top5Stocks .top-stocks-section .popover__content{
+    @include susy-breakpoint(min-width $desktop-start) {
+      &:after,&:before {
+        left: 75% ;
+      }
+    }
+  }
+}
+.fontsize-small{
+  .top5Stocks .top-stocks-section .popover__content{
+    @include susy-breakpoint(min-width $desktop-start) {
+      &:after,&:before {
+        left: 44% ;
+      }
+    }
+  }
+}

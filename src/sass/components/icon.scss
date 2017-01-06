@@ -1,0 +1,19 @@
+@mixin icon($icon-path:'../images/calendar/trading.svg') {
+  &:after{
+      content: url($icon-path);
+      width: 12px;
+      height: 12px;
+      position: relative;
+      object-fit: contain;
+  }
+}
+
+.icon-trading {
+  @include icon('../images/calendar/trading.svg');
+}
+.icon-notification-bell {
+  @include icon('../images/calendar/notification-bell.svg');
+}
+.icon-clock {
+  @include icon('../images/calendar/events.svg');
+}

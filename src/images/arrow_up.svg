@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="5px" viewBox="0 0 11 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages/Products" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product_Equity_tablet" transform="translate(-668.000000, -697.000000)" fill="#F4364C">
+            <g id="overview" transform="translate(54.000000, 157.000000)">
+                <g id="P2" transform="translate(30.000000, 517.000000)">
+                    <path d="M593.887697,23.1102545 L589.333357,26.9071183 L584.779016,23.1102545 C584.577388,22.9425519 584.278131,22.9699591 584.11028,23.1709948 C583.942133,23.3721787 583.969392,23.6718804 584.170724,23.8397312 L589.02921,27.8897785 C589.11721,27.9632595 589.225357,28 589.333357,28 C589.441504,28 589.549503,27.9632595 589.637503,27.8897785 L594.495989,23.8397312 C594.697321,23.6718804 594.72458,23.3723268 594.556433,23.1709948 C594.38799,22.9693665 594.08977,22.9421075 593.887697,23.1102545 Z" id="Shape" transform="translate(589.333357, 25.500000) scale(1, -1) translate(-589.333357, -25.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+<head>
+   {{>header title="Search Result"}}
+</head>
+<body>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+    <div id="skip-to-content"></div>
+    <!-- end: anchor only for accessibility -->
+    <div class="container content-container advanced-search">
+        {{> advancedFilter}}
+
+        <!-- end of nav side -->
+
+        <main class="advanced-search__main advanced-search__no-result">
+
+            <section class="search-results">
+              {{> noMatchResult}}
+            </section>
+
+
+        </main>
+        <!-- end of main content -->
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+        {{> footer}}
+        </div>
+    </footer>
+
+    {{> scripts}}
+
+</body>
+</html>

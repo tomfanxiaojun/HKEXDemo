@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+<head>
+   {{>header title="Product Equities"}}
+</head>
+<body>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+    <div id="skip-to-content"></div>
+    <!-- end: anchor only for accessibility -->
+    {{> bannerEquities}}
+    <!-- end of banner section -->
+    <div class="container content-container">
+        <nav class="nav-side left-menu">
+            {{> equitiesLeftMenu}}
+
+            <!-- breadcrumb -->
+            {{> breadcrumbEquities}}
+        </nav>
+        <!-- end of nav side -->
+
+        <main class="nav-content-wrap">
+         <section class="section__panel equities-overview">
+           {{> equitiesOverview}}
+         </section>
+         <section class="equities-right-side">
+            {{> namingConventions}}
+         </section>
+            <section class="stock-table">
+                {{> stockTable}}
+            </section>
+        </main>
+        <!-- end of main content -->
+        <aside class="nav-side side-content">
+            <section class="top5Stocks">
+                {{> top5Stocks}}
+            </section>
+            <section class="section__left_panel">
+                {{> marketMaking}}
+            </section>
+            <section class="section__left_panel">
+                {{> resource}}
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+        {{> footer}}
+        </div>
+    </footer>
+
+    {{> scripts}}
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.side-content {
+    margin-top: 20px;
+    float: left;
+    &__dropdown {
+        padding: 10px 0 20px;
+        .select-group {
+            display: inline-block;
+        }
+    }
+    &__report {
+        border-top: 1px solid #cbcbcb;
+        border-bottom: 1px solid #cbcbcb;
+        margin-left: 20px;
+        margin-right: 20px;
+        &--title {
+            padding-top: 20px;
+            text-transform: uppercase;
+            font-size: toRem(14);
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.5px;
+            a {
+                color: $hkex-subTitle;
+            }
+            &-sub-title {
+                font-weight: normal;
+                letter-spacing: 0.6px;
+                text-transform: none;
+            }
+        }
+        &--image {
+            margin-top: 17px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+        > div:not([data-target-report="true"]) {
+            display: none;
+        }
+    }
+    &__download {
+        margin: 20px auto;
+        text-align: center;
+        a {
+            font-size: toRem(14);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $white;
+            vertical-align: sub;
+            display: inline-block;
+            padding: 20px;
+            min-height: 50px;
+            background: $level1-color;
+        }
+        a:active,
+        a:focus,
+        a:hover,
+        a:visited {
+            text-decoration: none;
+        }
+    }
+}

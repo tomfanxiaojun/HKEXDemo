@@ -1,0 +1,390 @@
+.slider{
+    background-color: $hkex-paleblue;
+    overflow: hidden;
+    width: 100%;
+
+    .container{
+        @include susy-breakpoint(max-width $large) {
+            max-width: 768px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            max-width: 100%;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        float: left;
+        width: 100%;
+        z-index: 0;
+        @include susy-breakpoint(max-width $medium) {
+            border-bottom: 1px solid $level5-color;
+        }
+    }
+
+    &__slides {
+        position: relative;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__slide{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+        &:first-child {
+            position: relative;
+            display: block;
+            float: left;
+        }
+        @include susy-breakpoint(max-width $large) {
+            height: 399px;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            height: auto;
+            a{
+                display: inline-block;
+                width: 100%;
+            }
+        }
+        img {
+            display: block;
+            height: auto;
+            float: right;
+            max-width: 72%;
+            position: relative;
+            border: 0;
+            left: 0;
+
+
+            @include susy-breakpoint(max-width $large) {
+                left: 4.5%;
+                height: 84%;
+                max-width: 100%;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                width: 100%;
+                height: auto;
+                left: 0;
+
+            }
+
+        }
+        > a div {
+            position: absolute;
+            right: -1px;
+            max-width: 73%;
+            max-height: 498px;
+            z-index: 1;
+            background: url('../images/slider/cover.png') no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+
+
+            @include susy-breakpoint(max-width $large) {
+                left: 10.4%;
+                height: 85%;
+                width: 724px;
+                max-width: 100%;
+                background: url('../images/slider/tablet-cover.png') no-repeat right;
+                right: 0px;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                display: none;
+            }
+        }
+        > div {
+            z-index: 2;
+        }
+
+    }
+
+    &__caption {
+        display: block;
+        position: absolute;
+        /*background: linear-gradient(#ffffff 60%, #e5efef);*/
+        background: url('../images/slider/caption-bg.png') no-repeat;
+        background-size: contain;
+        left: 0;
+        bottom: 25px;
+        /*padding: 11% 20px 0 57px;*/
+        padding: 10% 8% 0 8%;
+        margin: 0;
+        max-width: none;
+        max-height: 518px;
+        max-width: 518px;
+        width: 518px;
+        height: 518px;
+        height: 100%;
+        @include susy-breakpoint(max-width 1400px) {
+            padding-right: 11%;
+            min-width: 381px;
+            min-height: 381px;
+            width: 100%;
+            height: 100%;
+        }
+        @include susy-breakpoint(max-width 1200px) {
+            padding-right: 18%;
+            padding-top: 8%;
+        }
+
+        @include susy-breakpoint(max-width $large) {
+            /*background-image: linear-gradient(#ffffff 60%, #e5efef);*/
+            background: url('../images/slider/tbt-banner-circle.png') no-repeat;
+            width: 399px;
+            height: 399px;
+            padding-left: 60px;
+            padding-top: 13%;
+            padding-right: 3%;
+            bottom: 18%;
+            border-radius: 50% 50%;
+        }
+
+        @include susy-breakpoint(max-width $medium) {
+            border-radius: 0%;
+            width: 100%;
+            height: auto;
+            bottom: 0;
+            padding-top: 40px;
+            padding-left: 21px;
+            min-height: 255px;
+            min-width: 100%;
+            padding-bottom: 20px;
+            box-shadow: 0 1px 0 0 $level5-color;
+            background-color: #ffffff;
+            background-image: none;
+            position: static;
+            margin-top: -5px;
+        }
+        &__year{
+            font-size: 26px;
+            font-weight: 700;
+            color: $level2-color;
+            margin: 0;
+            line-height: 1.5;
+
+
+            @include susy-breakpoint(max-width $large) {
+                font-size: 30px;
+            }
+        }
+        &__subtitle {
+            font-size: 24px;
+            font-weight: 700;
+            color: $level1-color;
+            text-transform: uppercase;
+            margin: 0;
+
+
+            line-height: 1.5;
+            @include susy-breakpoint(max-width $large) {
+                font-size: 30px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: $level1-color;
+            line-height: 1.2;
+            margin: 0 0 13px 0;
+            @include susy-breakpoint(max-width $medium) {
+                font-size: toRem(18);
+            }
+            @include susy-breakpoint(max-width $large) {
+                font-size: 22px;
+                font-weight: 300;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__read_more{
+        font-size: 12px;
+        color: $level1-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        @include susy-breakpoint(max-width $large) {
+            letter-spacing: 2px;
+        }
+        .caret{
+            margin-left: 2px;
+            display: inline-block;
+            border-top: 1px solid $level2-color;
+            border-right: 1px solid $level2-color;
+            width: 7px;
+            height: 7px;
+            transform: rotate(45deg);
+        }
+    }
+    &__slides_tabs{
+        position: absolute;
+        bottom: 4em;
+        left: 13%;
+        z-index: 2;
+        transform: translate(-24%, -50%);
+        @include susy-breakpoint(max-width 1200px) {
+            bottom: 3em;
+        }
+
+        @include susy-breakpoint(max-width $large) {
+            bottom: 6.5em;
+            left: 18%;
+        }
+        @include susy-breakpoint(max-width $medium) {
+            left: 48%;
+            transform: translate(-50%, -50%);
+        }
+        @include susy-breakpoint(max-width 497px) {
+            left: 42%;
+            transform: translate(-44%, -50%);
+        }
+
+
+        li{
+            float: left; z-index: 5;
+            list-style-type: none;
+            width: 8px;height: 8px;
+            border-radius: 50% 50%;
+            background-color: $level7-color;
+            margin: 0 8.1px;
+            a{
+                width: 8.4px;height: 8px;
+                border-radius: 50% 50%;
+                text-indent: -9999px;
+                display: inline-block;
+            }
+        }
+
+        li.slider__slides_active{
+            background-color: $level2-color;
+        }
+    }
+
+    &__slides_nav {
+        position: absolute;
+        top: 23%;
+        left: 0;
+        opacity: 0.7;
+        z-index: 3;
+        text-indent: -9999px;
+        overflow: hidden;
+        text-decoration: none;
+        height: 61px;
+        width: 38px;
+        &:active {
+            opacity: 1.0;
+        }
+        @include susy-breakpoint(min-width $large) {
+            display: none;
+        }
+        @include susy-breakpoint(max-width $small) {
+            top: 10%;
+        }
+    }
+    .next {
+        left: auto;
+        right: 20px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg);
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        @include susy-breakpoint(min-width $medium) {
+            display: none;
+        }
+    }
+    .prev{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        left: 20px;
+        transform: rotate(-45deg);
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+
+        @include susy-breakpoint(min-width $medium) {
+            display: none;
+        }
+    }
+    @include susy-breakpoint(max-width $large) {
+        background-color: $background-blue-1;
+    }
+}
+.fontsize-large{
+    .slider{
+        &__slides_tabs{
+            @include susy-breakpoint(max-width $large) {
+                bottom: 5em;
+            }
+        }
+    }
+}
+.fontsize-small{
+    .slider{
+
+        &__slide{
+            > a div {
+                @include susy-breakpoint(min-width $desktop-start) {
+                    max-width: 74%;
+                    right: -1px;
+                }
+            }
+        }
+
+        &__caption{
+            @include susy-breakpoint(min-width 1400px) {
+                min-width: 500px;
+
+            }
+
+            @include susy-breakpoint(min-width $tablet-start) {
+                padding-top: 18%;
+            }
+            @include susy-breakpoint(min-width $desktop-start) {
+                padding-top: 14%;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                min-height: 195px;
+            }
+            &__year{
+                font-size: toRem(26);
+                @include susy-breakpoint(max-width $large) {
+                    font-size: toRem(30);
+                }
+                
+            }
+            &__subtitle {
+                 font-size: toRem(24);
+                 @include susy-breakpoint(max-width $large) {
+                     font-size: toRem(30);
+                 }
+            }
+            p{
+                font-size: toRem(20);
+                @include susy-breakpoint(max-width $large) {
+                    font-size: toRem(22);
+                }
+            }
+
+
+        }
+        &__read_more{
+            font-size: toRem(12);
+        }
+
+        &__slides_tabs{
+            bottom: 10em;
+            @include susy-breakpoint(max-width $large) {
+                bottom: 12em;
+            }
+
+        }
+
+    }
+}

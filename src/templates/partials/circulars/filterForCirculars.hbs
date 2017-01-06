@@ -1,0 +1,39 @@
+<div class="collapse-container filter__container ">
+  <div class="filter__searchPanel">
+    <div class="filter__searchBox">
+      <input type="text" class="searchBox" name="searchBox"  placeholder="Keywords, Ref No." title="Keywords, Ref No." />
+    </div>
+    <div class="filter__moreFilter">
+      <div class="filter__moreFilter__label">
+        <a class="filter__moreFilterText" aria-expanded="false" data-toggle="collapse" href="#checkboxForm">
+            More filters
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="collapse filter__checkboxForm" id="checkboxForm">
+    <div class="filter__dropdown-wrapper filter__dropdown-js">
+      <div class="filter__dropdown__title">SELECT BY YEAR</div>
+      <div class="select-group">
+          <div class="select-target">
+              <a id="select-target-date" data-select="true" data-expend="false" href="#" data-value="All" name="YEAR">All</a>
+          </div>
+          <div class="select-items">
+              <div class="select-item" data-value="All" data-target="true"><a href="#">All</a></div>
+              <div class="select-item" data-value="2016"><a href="#">2016</a></div>
+              <div class="select-item" data-value="2015"><a href="#">2015</a></div>
+          </div>
+      </div>
+    </div>
+    <div class="filter__checkbox-wrapper">
+      {{> checkBox filterConditions.circulars}}
+    </div>
+    <div class="filter__buttonGroup">
+      <a class="btn-disable filter__btn-applyFilters-js" tabindex="0">Apply Filters</a>
+      <a class="btn-white filter__btn-cancelFilters-js" tabindex="0">Cancel</a>
+    </div>
+  </div>
+  <div class="filter__selectedItem">
+  </div>
+</div>

@@ -1,0 +1,100 @@
+.equities-right-side{
+  overflow: hidden;
+  background: $white;
+  border-bottom: 1px solid #AEB4C5;
+  margin-top: 20px;
+  .naming-conventions{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    @include susy-breakpoint(max-width $medium) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    >:nth-child(n){
+      border-bottom: 1px solid $background-blue-1;
+    }
+    >:last-child{
+      border-bottom: none;
+    }
+    &__title-part-title{
+      @extend %title;
+    }
+    &__title-part-note{
+      color: $hkex-gray-deep;
+      font-size: toRem(12);
+      line-height: 18px;
+      padding: 9px 0 12px 0;
+      @include susy-breakpoint(max-width $medium){
+          padding: 23px 0 16px 0;
+     }
+    }
+
+    &__item{
+      padding-bottom: 15px;
+      padding-top: 15px;
+      color: $level1-color;
+      h3{
+          margin-top: 0;
+          margin-bottom: 10px;
+      }
+      p{
+        font-size: toRem(14);
+        line-height: 1.43;
+        margin:0;
+       }
+
+      .X-content-container{
+        margin-bottom: 12px;
+        display: inline-block;
+        span{
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          font-size: 13px;
+          border: 1px solid $background-blue-1;
+          margin-right: 10px;
+          font-weight: bold;
+          background-color: $tag-selected;
+          text-align: center;
+          line-height: 22px;
+          @include susy-breakpoint(max-width 600px){
+            margin-right: 0;
+          }
+         }
+        @include susy-breakpoint(max-width $medium){
+          border: 1px solid $background-blue-1;
+          background-color: $tag-selected;
+          span{
+            border:none;
+            line-height: 28px;
+            height: 28px;
+          }
+        }
+        @include susy-breakpoint(max-width 420px){
+          padding-left: 7px;
+          padding-right: 7px;
+          margin-bottom: 10px;
+          span{
+            width: 14px;
+            font-size: 12px;
+          }
+        }
+      }
+
+    }
+    &__foot-note{
+      color: $hkex-gray-deep;
+      font-size: toRem(12);
+      line-height: 1.33;
+      padding: 15px 0 24px 0;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      @include susy-breakpoint(max-width $medium){
+          padding: 10px 0 20px 0;
+      }
+    }
+
+  }
+}

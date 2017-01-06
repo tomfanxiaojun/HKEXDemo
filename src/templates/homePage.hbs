@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="market-hkex">
+
+<head>
+  {{>header title="Home Page"}}
+</head>
+
+<body>
+
+  <div class="ticker-messages"></div>
+  {{> topbar}}
+  <!-- end of topbar -->
+  {{> navigation2}}
+  <!-- end of nav -->
+
+
+  <section class="slider" id="skip-to-content">
+    <div class="container">
+      {{> slider}}
+    </div>
+  </section>
+  <!-- end of slider -->
+
+  <section class="l-content">
+    <div class="container">
+
+      <div class="l-content__aside">
+        <div class="stock-quote">
+          {{> stockQuoteLookup}}
+        </div>
+      </div>
+      <div class="l-content__primary">
+        <section class="market-overview">
+          {{> marketOverView}}
+        </section>
+        <!-- end of market Data -->
+
+        <section class="market-data">
+          {{> marketTurnover}}
+        </section>
+        <!-- end of market turnover -->
+      </div>
+
+
+      <div class="l-content__aside">
+
+        <div class="top5-stocks">
+          {{> topStocks}}
+        </div>
+        {{> news}}
+      </div>
+
+
+      <div class="l-content__primary">
+
+        <section class="featured">
+          {{> whatsOn}}
+        </section>
+        <!-- end of featured content -->
+      </div>
+
+      <div class="l-content__aside cr">
+        {{> focus}}
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      {{> footer}}
+    </div>
+  </footer>
+  {{> scripts }}
+
+</body>
+
+</html>

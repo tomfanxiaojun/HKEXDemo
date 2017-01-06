@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the quick link component.
+// -----------------------------------------------------------------------------
+.quick-links__title {
+    padding-left: 20px;
+}
+
+.quick-link-list {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    li {
+        list-style-type: none;
+        line-height: 1;
+        margin-top: 6px;
+        vertical-align: top;
+        @include link-arrow-right;
+        @include susy-breakpoint(max-width $medium) {
+            max-width: 275px;
+        }
+        cursor: pointer;
+    }
+}
+
+.quick-link-3-cols {
+    li {
+        @include susy-breakpoint(min-width $desktop-start) {
+            display: inline-block;
+            width: 29%;
+            margin-right: 35px;
+            // &:nth-child(3n+3){
+            //     margin-right: 0;
+            // }
+        }
+        i {
+            width: 6px;
+        }
+    }
+}
+
+.quick-link-list-tablet-mobile {
+    li {
+        @include susy-breakpoint(max-width $large) {
+            display: inline-block;
+            width: 46%;
+            margin-right: 44px;
+            vertical-align: top;
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+        }
+        @include susy-breakpoint(max-width $medium) {
+            max-width: 100%;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+
+.fontsize-large {
+    .quick-link-list {
+        li {
+            a {
+                background: url(../images/arrow-right.svg) no-repeat right 10px top 8px;
+            }
+        }
+    }
+    .quick-link-list-tablet-mobile {
+        li {
+            @include susy-breakpoint(max-width $large) {
+                width: 45%;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                width: 97%;
+            }
+        }
+    }
+}
+
+.fontsize-small {
+    .quick-link-list {
+        li {
+            a {
+                background: url(../images/arrow-right.svg) no-repeat right 10px top 2px;
+                i {
+                    width: 6px\0;
+                    height: 14px\0;
+                }
+            }
+        }
+    }
+}

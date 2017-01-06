@@ -1,0 +1,53 @@
+.listing-committee {
+    &__brief {
+        font-size: toRem(14);
+        line-height: 1.43;
+        color: $level1-color;
+        margin-bottom: 18px;
+        margin-top: 4px;
+        //mobile
+        @include susy-media(max-width $large) {
+            margin-top: 12px;
+        }
+    }
+    &__brief-download {
+        font-size: toRem(14);
+        line-height: 1.5;
+        color: $level1-color;
+        a {
+            font-weight: 700;
+            text-decoration: underline;
+            @include file-icon;
+        }
+    }
+    @include susy-media(max-width $large) {
+        // margin-top: 20px;
+    }
+    .section__title-left-border {}
+    &__list-title {
+        h2 {
+            font-size: toRem(18);
+        }
+        //mobile
+        // @include susy-media(max-width $large) {
+        //     display: none;
+        // }
+    }
+}
+
+.listing-page-content-container {
+    @include susy-media(max-width $large) {
+        margin-top: 0px;
+    }
+     //mobile layout
+    .listing-committee-quick-link {
+        //mobile
+        width: 100%;
+        float: left;
+        @include susy-media(max-width $large) {
+            margin-bottom: 20px;
+        }
+    }
+
+
+}

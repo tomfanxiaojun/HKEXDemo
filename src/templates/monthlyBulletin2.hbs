@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+<head>
+   {{>header title="Monthly Bulletin"}}
+</head>
+<body>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+    <div id="skip-to-content"></div>
+    <!-- end: anchor only for accessibility -->
+    {{> bannerMonthlyBulletin monthlyBulletin}}
+    <!-- end of banner section -->
+    <div class="container content-container">
+        <nav class="nav-side left-menu">
+            {{> statisticsLeftMenu marketStatistics='active' monthlyBulletinMenu='active'}}
+
+            <!-- breadcrumb -->
+            {{> monthlyBulletinBreadcrumb monthlyBulletinBreadcrumb}}
+        </nav>
+        <!-- end of nav side -->
+
+        <main class="nav-content-wrap">
+             <section class="section__table">
+                {{> monthlyBulletinTable2}}
+              </section>
+        </main>
+        <!-- end of main content -->
+    </div>
+
+    <footer>
+        <div class="container">
+        {{> footer}}
+        </div>
+    </footer>
+
+    {{> scripts}}
+
+</body>
+</html>

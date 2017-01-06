@@ -1,0 +1,62 @@
+.equity-overview {
+    margin-bottom: 20px;
+    &-container {
+        padding-top: 6px;
+        padding-bottom: 10px;
+        & hr {
+            margin-top: 0;
+            border-top: 1px solid $level8-color;
+        }
+    }
+}
+.equity-securities {
+    &__title {
+        padding-top: 6px !important;
+        padding-bottom: 0 !important;
+        a {
+            text-transform: uppercase;
+            padding-right: 20px;
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.0625rem;
+            color: $hkex-red;
+            text-decoration: none;
+        }
+        a:hover, a:focus {
+            color: $hkex-red;
+            text-decoration: none;
+        }
+        h3 {
+          font-size: toRem(14);
+        }
+    }
+    &__context:not(:first-child) {
+        margin-top: 15px;
+    }
+    &__context p {
+        color: $level1-color;
+        width: 96%;
+        font-size: toRem(14);
+        line-height: 1.43;
+        margin: 14px 0;
+        @include susy-breakpoint(max-width $medium) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &__context p:first-child{
+      margin-top: 0;
+    }
+    &__collapse-title[aria-expanded='true'] {
+        background: url("../images/arrow_up.svg") no-repeat 100% 2px;
+    }
+    &__collapse-title[aria-expanded='false'] {
+        background: url("../images/down-arrow-red.svg") no-repeat 100% 2px;
+    }
+    &__quicklinks-item {
+        display: inline-block;
+        width: 45%;
+        margin-right: 20px;
+    }
+}

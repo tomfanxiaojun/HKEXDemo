@@ -1,0 +1,705 @@
+{
+	"title": "Up to 2016/10/17",
+	"images": [
+		{
+			"src": "http://www.hkex.com.hk/eng/stat/dmstat/marksum/MSFnO20161018051812315.gif",
+			"alt": "Chart 1"
+		},
+		{
+			"src": "http://www.hkex.com.hk/eng/stat/dmstat/marksum/MSFnO20161018051812424.gif",
+			"alt": "Chat 2"
+		}
+	],
+	"tables": [
+		{
+			"header": [
+				{
+					"row": 0,
+					"col": 0,
+					"rowspan": 2,
+					"isNumField": false,					
+					"text": "Type of listed securities"
+				},
+				{
+					"row": 0,
+					"col": 1,
+					"rowspan": 2,
+					"isNumField": true,					
+					"text": "Number of issues"
+				},
+				{
+					"row": 0,
+					"col": 2,
+					"colspan": 2,
+					"text": "Market value"
+				},
+				{
+					"row": 0,
+					"col": 3,
+					"colspan": 3,
+					"text": "Turnover"
+				},
+				{
+					"row": 1,
+					"col": 0,
+					"isNumField": true,					
+					"text": "(HK$mil)"
+				},
+				{
+					"row": 1,
+					"col": 1,
+					"isNumField": true,					
+					"text": "% of total"
+				},
+				{
+					"row": 1,
+					"col": 2,
+					"colspan": 2,
+					"isNumField": true,					
+					"text": "(HK$mil)"
+				},
+				{
+					"row": 1,
+					"col": 3,
+					"isNumField": true,					
+					"text": "% of total"
+				}
+			],
+			"body": [
+				{
+					"row": 2,
+					"col": 0,
+					"text": "Ordinary Shares"
+				},
+				{
+					"row": 2,
+					"col": 1,
+					"text": "1,683"
+				},
+				{
+					"row": 2,
+					"col": 2,
+					"text": "24,915,298.34"
+				},
+				{
+					"row": 2,
+					"col": 3,
+					"text": "96.07"
+				},
+				{
+					"row": 2,
+					"col": 4,
+					"text": "1,042,190.62"
+				},
+				{
+					"row": 2,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 2,
+					"col": 6,
+					"text": "69.59"
+				},
+				{
+					"row": 3,
+					"col": 0,
+					"text": "Preference shares"
+				},
+				{
+					"row": 3,
+					"col": 1,
+					"text": "7"
+				},
+				{
+					"row": 3,
+					"col": 2,
+					"text": "43.52"
+				},
+				{
+					"row": 3,
+					"col": 3,
+					"text": "0.00"
+				},
+				{
+					"row": 3,
+					"col": 4,
+					"text": "93.44"
+				},
+				{
+					"row": 3,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 3,
+					"col": 6,
+					"text": "0.01"
+				},
+				{
+					"row": 4,
+					"col": 0,
+					"text": "Equity warrants"
+				},
+				{
+					"row": 4,
+					"col": 1,
+					"text": "12"
+				},
+				{
+					"row": 4,
+					"col": 2,
+					"text": "1,000.81"
+				},
+				{
+					"row": 4,
+					"col": 3,
+					"text": "0.00"
+				},
+				{
+					"row": 4,
+					"col": 4,
+					"text": "21.04"
+				},
+				{
+					"row": 4,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 4,
+					"col": 6,
+					"text": "0.00"
+				},
+				{
+					"row": 5,
+					"col": 0,
+					"text": "Derivative warrants"
+				},
+				{
+					"row": 5,
+					"col": 1,
+					"text": "3,936"
+				},
+				{
+					"row": 5,
+					"col": 2,
+					"text": "71,988.70"
+				},
+				{
+					"row": 5,
+					"col": 3,
+					"text": "0.28"
+				},
+				{
+					"row": 5,
+					"col": 4,
+					"text": "210,188.02"
+				},
+				{
+					"row": 5,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 5,
+					"col": 6,
+					"text": "14.04"
+				},
+				{
+					"row": 6,
+					"col": 0,
+					"text": "Equity linked instruments"
+				},
+				{
+					"row": 6,
+					"col": 1,
+					"text": "0"
+				},
+				{
+					"row": 6,
+					"col": 2,
+					"text": "N/A"
+				},
+				{
+					"row": 6,
+					"col": 3,
+					"text": ""
+				},
+				{
+					"row": 6,
+					"col": 4,
+					"text": "0.00"
+				},
+				{
+					"row": 6,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 6,
+					"col": 6,
+					"text": "0.00"
+				},
+				{
+					"row": 7,
+					"col": 0,
+					"text": "Callable Bull/Bear Contracts"
+				},
+				{
+					"row": 7,
+					"col": 1,
+					"text": "1,988"
+				},
+				{
+					"row": 7,
+					"col": 2,
+					"text": "70,492.17"
+				},
+				{
+					"row": 7,
+					"col": 3,
+					"text": "0.27"
+				},
+				{
+					"row": 7,
+					"col": 4,
+					"text": "121,016.13"
+				},
+				{
+					"row": 7,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 7,
+					"col": 6,
+					"text": "8.08"
+				},
+				{
+					"row": 8,
+					"col": 0,
+					"text": "Debt securities"
+				},
+				{
+					"row": 8,
+					"col": 1,
+					"text": "821"
+				},
+				{
+					"row": 8,
+					"col": 2,
+					"text": "N/A"
+				},
+				{
+					"row": 8,
+					"col": 3,
+					"text": ""
+				},
+				{
+					"row": 8,
+					"col": 4,
+					"text": "2,339.84"
+				},
+				{
+					"row": 8,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 8,
+					"col": 6,
+					"text": "0.16"
+				},
+				{
+					"row": 9,
+					"col": 0,
+					"text": "Unit trusts"
+				},
+				{
+					"row": 9,
+					"col": 1,
+					"text": "157"
+				},
+				{
+					"row": 9,
+					"col": 2,
+					"text": "875,957.16"
+				},
+				{
+					"row": 9,
+					"col": 3,
+					"text": "3.38"
+				},
+				{
+					"row": 9,
+					"col": 4,
+					"text": "121,451.52"
+				},
+				{
+					"row": 9,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 9,
+					"col": 6,
+					"text": "8.11"
+				},
+				{
+					"row": 10,
+					"col": 0,
+					"text": "Rights"
+				},
+				{
+					"row": 10,
+					"col": 1,
+					"text": "1"
+				},
+				{
+					"row": 10,
+					"col": 2,
+					"text": "N/A"
+				},
+				{
+					"row": 10,
+					"col": 3,
+					"text": ""
+				},
+				{
+					"row": 10,
+					"col": 4,
+					"text": "228.05"
+				},
+				{
+					"row": 10,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 10,
+					"col": 6,
+					"text": "0.02"
+				},
+				{
+					"row": 11,
+					"col": 0,
+					"text": "Sub-total for listed securities"
+				},
+				{
+					"row": 11,
+					"col": 1,
+					"text": "8,605"
+				},
+				{
+					"row": 11,
+					"col": 2,
+					"text": "25,934,780.70"
+				},
+				{
+					"row": 11,
+					"col": 3,
+					"text": "100.00"
+				},
+				{
+					"row": 11,
+					"col": 4,
+					"text": "1,497,528.66"
+				},
+				{
+					"row": 11,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 11,
+					"col": 6,
+					"text": "100.00"
+				},
+				{
+					"row": 12,
+					"col": 0,
+					"text": "Sub-total for listed securities"
+				},
+				{
+					"row": 12,
+					"col": 1,
+					"text": "8,605"
+				},
+				{
+					"row": 12,
+					"col": 2,
+					"text": "25,934,780.70"
+				},
+				{
+					"row": 12,
+					"col": 3,
+					"text": "100.00"
+				},
+				{
+					"row": 12,
+					"col": 4,
+					"text": "1,497,528.66"
+				},
+				{
+					"row": 12,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 12,
+					"col": 6,
+					"text": "100.00"
+				},
+				{
+					"row": 13,
+					"col": 0,
+					"text": "Sub-total for listed securities"
+				},
+				{
+					"row": 13,
+					"col": 1,
+					"text": "8,605"
+				},
+				{
+					"row": 13,
+					"col": 2,
+					"text": "25,934,780.70"
+				},
+				{
+					"row": 13,
+					"col": 3,
+					"text": "100.00"
+				},
+				{
+					"row": 13,
+					"col": 4,
+					"text": "1,497,528.66"
+				},
+				{
+					"row": 13,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 13,
+					"col": 6,
+					"text": "100.00"
+				}
+			],
+			"footer": [
+				{
+					"row": 0,
+					"col": 0,
+					"colspan": 7,
+					"text": "1. Trading in CES Gaming Top 10 Index Futures commenced on 09 May 2016"
+				},
+				{
+					"row": 1,
+					"col": 0,
+					"colspan": 7,
+					"text": "2. Trading in Hang Seng Mainland Oil & Gas Index Futures commenced on 09 May 2016"
+				},
+				{
+					"row": 2,
+					"col": 0,
+					"colspan": 7,
+					"text": "3. Trading in Hang Seng Mainland Banks Index Futures commenced on 09 May 2016"
+				}
+			]
+		},
+		{
+			"header": [
+				{
+					"row": 13,
+					"col": 0,
+					"rowspan": 2,
+					"text": "Trading only stocks"
+				},
+				{
+					"row": 13,
+					"col": 1,
+					"rowspan": 2,
+					"text": "Number of issues"
+				},
+				{
+					"row": 13,
+					"col": 2,
+					"colspan": 2,
+					"text": "Market value"
+				},
+				{
+					"row": 13,
+					"col": 3,
+					"colspan": 3,
+					"text": "Turnover"
+				},
+				{
+					"row": 14,
+					"col": 0,
+					"text": "(HK$mil)"
+				},
+				{
+					"row": 14,
+					"col": 1,
+					"text": "% of total"
+				},
+				{
+					"row": 14,
+					"col": 2,
+					"colspan": 2,
+					"text": "(HK$mil)"
+				},
+				{
+					"row": 14,
+					"col": 3,
+					"text": "% of total"
+				}
+			],
+			"body": [
+				{
+					"row": 15,
+					"col": 0,
+					"text": "iShares"
+				},
+				{
+					"row": 15,
+					"col": 1,
+					"text": "2"
+				},
+				{
+					"row": 15,
+					"col": 2,
+					"text": "N/A"
+				},
+				{
+					"row": 15,
+					"col": 3,
+					"text": ""
+				},
+				{
+					"row": 15,
+					"col": 4,
+					"text": "0.00"
+				},
+				{
+					"row": 15,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 15,
+					"col": 6,
+					"text": "0.00"
+				},
+				{
+					"row": 16,
+					"col": 0,
+					"text": "NASDAQ stocks"
+				},
+				{
+					"row": 16,
+					"col": 1,
+					"text": "6"
+				},
+				{
+					"row": 16,
+					"col": 2,
+					"text": "N/A"
+				},
+				{
+					"row": 16,
+					"col": 3,
+					"text": ""
+				},
+				{
+					"row": 16,
+					"col": 4,
+					"text": "0.00"
+				},
+				{
+					"row": 16,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 16,
+					"col": 6,
+					"text": "0.00"
+				},
+				{
+					"row": 17,
+					"col": 0,
+					"text": "Sub-total for Trading only stocks"
+				},
+				{
+					"row": 17,
+					"col": 1,
+					"text": "8"
+				},
+				{
+					"row": 17,
+					"col": 2,
+					"text": ""
+				},
+				{
+					"row": 17,
+					"col": 3,
+					"text": ""
+				},
+				{
+					"row": 17,
+					"col": 4,
+					"text": "0.00"
+				},
+				{
+					"row": 17,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 17,
+					"col": 6,
+					"text": "0.00"
+				},
+				
+				{
+					"row": 19,
+					"col": 0,
+					"text": "Total"
+				},
+				{
+					"row": 19,
+					"col": 1,
+					"text": "8,613"
+				},
+				{
+					"row": 19,
+					"col": 2,
+					"text": "25,934,780.70"
+				},
+				{
+					"row": 19,
+					"col": 3,
+					"text": "100.00"
+				},
+				{
+					"row": 19,
+					"col": 4,
+					"text": "1,497,528.66"
+				},
+				{
+					"row": 19,
+					"col": 5,
+					"text": ""
+				},
+				{
+					"row": 19,
+					"col": 6,
+					"text": "100.00"
+				}
+			]
+		}
+	],
+	"isPrintPreview": true
+}

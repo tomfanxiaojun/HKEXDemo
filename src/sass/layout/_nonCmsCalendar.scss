@@ -1,0 +1,64 @@
+.sample-calendar {
+  background-color: $white;
+  padding-bottom: 30px;
+  .static-calendar {
+      margin: 0 30px 30px 30px;
+
+      @include susy-breakpoint(max-width $medium) {
+          margin: 0 20px 20px 20px;
+      }
+
+      table, th, td {
+          border-collapse: collapse;
+      }
+
+      a {
+          text-decoration: none;
+          display: inline-block;
+          width: 100%;
+          color: #005b82;
+      }
+
+      //static-calendar__table
+      &__table:not(:first-child) {
+          margin-top: 30px;
+
+           @include susy-breakpoint(max-width $medium) {
+               margin-top: 20px;
+           }
+      }
+
+      //static-calendar__table
+      &__table {
+          font-size: toRem(12);
+          width: 100%;
+          border: 1px solid $level1-color;
+          color: #005b82;
+
+          thead tr {
+              height: 38px;
+              line-height: 38px;
+              background-color: $level1-color;
+              color: #fff;
+              text-transform: uppercase;
+          }
+
+          tbody td {
+              width: 14.28%;
+              text-align: center;
+              height: 28px;
+              line-height: 28px;
+          }
+      }
+
+      //static-calendar__table--active
+      a:not(.static-calendar__table--holiday):hover {
+          background-color: $button-gray;
+      }
+
+      //static-calendar__table--holiday
+      .static-calendar__table--holiday {
+         color: #9d9d9d;
+     }
+  }
+}

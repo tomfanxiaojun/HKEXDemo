@@ -1,0 +1,165 @@
+@charset 'UTF-8';
+
+
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'base/fonts',
+  'layout/grid.scss';
+
+@import  'components/fixedFreezeTb';
+
+.market-hkex {
+// 1. Configuration and helpers
+@import 'layout/layout.scss';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/typography',
+  'base/helpers';
+
+// 4. Components
+@import
+  'components/listingStep',
+  'components/button',
+  'components/icon',
+  'components/radioButton',
+  'components/pollWidgetCheckbox',
+  'components/pollWidgetRadio',
+  'components/faqWidget',
+  'components/searchBox',
+  'components/videoControl',
+  'components/marketOverView',
+  'components/carousel',
+  'components/navPopover',
+  'components/banner',
+  'components/sectionTitle',
+  'components/collapse',
+  'components/sectionPanel',
+  'components/list-menu',
+  'components/navPopover',
+  'components/download',
+  'components/checkboxSubscribe',
+  'components/input-text',
+  'components/input-textarea',
+  'components/quick-link',
+  'components/select',
+  'components/menuTitle',
+  'components/leftMenu',
+  'components/topMenu',
+  'components/modals',
+  'components/select',
+  'components/table',
+  'components/tablestickyheader',
+  'components/table_footer',
+  'components/contactUs',
+  'components/tabContainer',
+  'components/filter',
+  'components/sideContent',
+  'components/infoCard',
+  'components/tabs',
+  'components/dataList',
+  'components/tabContainer',
+  'components/newsletterModule',
+  'components/listPanel',
+  'components/tabScroll',
+  'components/loadMore',
+  'components/videoOrImgthumbnail',
+  'components/tabBox',
+  'components/tabContainer',
+  'components/share-group',
+  'components/tags',
+  'components/tickers',
+  'components/bulletPoint',
+  'components/twitter',
+  'components/blueBannerWithBtn',
+  'components/dateDataList.scss';
+
+
+// 5. Layout-related sections
+@import
+  'layout/topbar',
+  'layout/slider',
+  'layout/footer',
+  'layout/rightPanel',
+  'layout/marketTurnover',
+  'layout/navigation',
+  'layout/megaMenu',
+  'layout/whatsOn',
+  'layout/whatsOn',
+  'layout/gettingStarted',
+  'layout/faqAllQuestions',
+  'layout/listing/topSection',
+  'layout/listing/summary',
+  'layout/listing/newsLetter',
+  'layout/listing/nextStep',
+  'layout/faqAllQuestions',
+  'layout/listingCommittee',
+  'layout/listingCommitteeReport',
+  'layout/listing/contactUs',
+  'layout/listing/listingProcessFeaturedText',
+  'layout/listing/showReel',
+  'layout/listing/listProcessStep1To2',
+  'layout/listing/listProcessStep3To4',
+  'layout/listing/listProcessStep5To6',
+  'layout/listing/caseStudies',
+  'layout/listing/advantages',
+  'layout/listing/listingProcessQuickLinks',
+  'layout/statistics/dashboardForCd.scss',
+  'layout/statistics/tableForCd.scss',
+  'layout/statistics/rightPanel',
+  'layout/statistics/monthlyHighlight',
+  'layout/monthlyBulletin',
+  'layout/equities/top5stocks',
+  'layout/equities/marketMaking',
+  'layout/equities/resource',
+  'layout/equities/stockTable',
+  'layout/equities/equitiesOverview',
+  'layout/equityIndex/equityIndexOverview',
+  'layout/equityIndex/equityIndexMarketData',
+  'layout/etpIssuers/etpIssuers',
+  'layout/equityIndex/equitiesIndexContract',
+  'layout/equityIndex/equitiesIndexMarginTable',
+  'layout/equities/namingConventions',
+  'layout/monthlyBulletin',
+  'layout/etpOverview/etpOverview',
+  'layout/etp/etpEducation',
+  'layout/etp/etpLiquidity',
+  'layout/etp/products',
+  'layout/advancedSearch/searchResult',
+  'layout/contactsUs/contactsUsMap',
+  'layout/contactsUs/contactsUsTab',
+  'layout/contactsUs/contactsUsQuicklinks',
+  'layout/contactsUs/contactsUsContainer',
+  'layout/advancedSearch/advancedSearch',
+  'layout/circulars/circulars',
+  'layout/news/twitterSection',
+  'layout/news/featuredImage',
+  'layout/news/newsReleasesFilter',
+  'layout/news/newsReleases',
+  'layout/findPartner/findPartner',
+  'layout/calendar/calendarAgenda',
+  'layout/calendar/calendarSubscribe',
+  'layout/calendar/calendarFilter',
+  'layout/becomeParticipant/becomeParticipant',
+  'layout/calendar/calendarAgenda',
+  'layout/nonCmsCalendar',
+  'layout/calendar/calendarAgendaEvents';
+
+
+
+
+
+
+// 7. Page-specific styles
+@import
+  'pages/home';
+
+
+}

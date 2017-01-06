@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+
+<head>
+    {{>header title="Become a Participant"}}
+</head>
+
+<body>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+    <div id="skip-to-content"></div>
+    <!-- end: anchor only for accessibility -->
+    {{> becomeParticipantBanner becomeParticipant}} {{> becomeParticipantBreadcrumb becomeParticipant}}
+    <!-- end of banner section -->
+
+    <div class="container">
+        <div class="l-full-width">
+
+            <div class="becomeParticipant__container">
+                {{> becomeParticipantFeaturedText}}
+
+
+                <div class="ls-process__step-wrapper">
+                    {{> lsExpandAllBtn}}
+                    <div class="listing-step">
+                        {{> becomeParticipantProcess}}
+                    </div>
+                    <div class="becomeParticipant__content__download-container">
+                        {{> becomeParticipantDownload}}
+                    </div>
+                </div>
+                <div class="becomeParticipant__access-container">
+                    {{> becomeParticipantAccess}}
+                </div>
+            </div>
+
+            {{> becomeParticipantQuickLinks}}
+        </div>
+        <!-- end of main content -->
+    </div>
+    <footer>
+        <div class="container">
+            {{> footer}}
+        </div>
+    </footer>
+
+    {{> scripts}}
+
+</body>
+
+</html>

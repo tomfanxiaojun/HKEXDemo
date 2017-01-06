@@ -1,0 +1,163 @@
+.etpIssuers {
+	margin-bottom: 20px;
+	color: $hkex-blue;
+	&__fiveFact {
+		padding-top: 9px;
+		padding-bottom: 10px;
+	}
+	&__tab-titile{
+		margin-top: 25px;
+	}
+	&__whyListInHK-tab {
+		padding: 0 30px;
+		li:first-child {
+			margin-left: 14px;
+		}
+
+		div.scroll_tabs_content {
+			h3,
+			p {
+				font-size: toRem(14);
+			}
+		}
+	}
+	&__download {
+		padding: 0 30px 25px;
+	}
+	.ls-process__rule-holder {
+		padding-left: 134px;
+		@include susy-breakpoint(max-width $large) {
+			padding-left: 107px;
+		}
+		@include susy-breakpoint(max-width $medium) {
+			padding-left: 20px;
+		}
+	}
+	.ls-process__step3__table {
+		display: block;
+		@include span(5 of 7);
+		@include susy-breakpoint(max-width $large) {
+			 @include span(5 of 7);
+		}
+		@include susy-breakpoint(max-width $medium) {
+			 @include span(7 of 7);
+		}
+	}
+	.ls-process__step3__cal {
+		@include span(5 of 7);
+		@include susy-breakpoint(max-width $large) {
+			 @include span(5 of 7);
+		}
+		@include susy-breakpoint(max-width $medium) {
+			 @include span(7 of 7);
+		}
+		&__title {
+			margin-left: 0 !important;
+		}
+	}
+}
+.contact-us-aside {
+	margin-bottom: 20px;
+	.contact_us {
+		&__wrapper {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		&__form {
+			@include susy-breakpoint(min-width $large) {
+				padding-bottom: 20px;
+			}
+		}
+		&__form_column {
+			&:first-child {
+				@include susy-breakpoint(min-width $large) {
+					width: 100%;
+				}
+			}
+			&:nth-child(2n) {
+				@include susy-breakpoint(min-width $large) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0;
+				}
+			}
+			&:last-child {
+				@include susy-breakpoint(min-width $large) {
+					width: 100%;
+				}
+			}
+		}
+		&__form_text {
+			&:nth-child(2n) {
+				@include susy-breakpoint(min-width $large) {
+					margin-top: 20px;
+					margin-left: 20px;
+					float: right;
+				}
+			}
+			@include susy-breakpoint(min-width $large) {
+				 @include span(12);
+				margin-right: 0;
+				margin-top: 0;
+			}
+		}
+		.checkbox {
+			@include susy-breakpoint(min-width $large) {
+				padding-top: 0;
+				margin-top: 15px;
+			}
+			.btn-gray {
+				@include susy-breakpoint(max-width $medium) {
+					float: none;
+					margin: 20px auto 0;
+					display: block;
+				}
+			}
+		}
+	}
+	.form-input-text {
+		input {
+			margin-top: 0;
+		}
+	}
+	.btn-gray {
+
+		float: right;
+		background: $level1-color;
+		color: $white;
+		margin-top: 20px;
+		&:focus,
+		&:hover {
+			color: $white;
+		}
+		@include susy-breakpoint(min-width $large) {
+			float: none;
+			margin: 20px auto 0;
+			display: block;
+		}
+		@include susy-breakpoint(max-width $medium) {
+			float: none;
+			margin: 20px auto 0;
+			display: block;
+		}
+	}
+}
+.subScribe-newsletter {
+	margin-bottom: 20px;
+	background-color: $white;
+	&__content {
+		padding: 0 20px 20px;
+	}
+}
+.etp-related-news {
+	margin-bottom: 20px;
+	background-color: $white;
+}
+.related-downloads {
+	margin-bottom: 20px;
+	background-color: $white;
+	&__content {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}

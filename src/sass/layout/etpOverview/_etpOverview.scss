@@ -1,0 +1,93 @@
+.etp-overview {
+    &__title {
+        font-size: toRem(18);
+    }
+    &-relate-news {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    &-sub__title {
+        font-size: toRem(14);
+        color: $level2-color;
+        font-weight: bold;
+        padding-top: 8px;
+        padding-bottom: 20px;
+    }
+    &-sub__img {
+        margin-bottom: 27px;
+        @include susy-breakpoint(max-width $medium) {
+            padding-left: 0px !important;
+            padding-right: 0px!important;
+            margin-bottom: 20px;
+        }
+        img{
+          width: 100%;
+        }
+    }
+    &-data-list {
+        &__date {
+            padding-right: 17px;
+            // min-width: 14%;
+            display: inline-block;
+            @include susy-breakpoint(max-width $medium) {
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+            vertical-align: top;
+            &::before {
+                content: ' ';
+                background: url(.././images/flag-bug-report.svg);
+                background-repeat: no-repeat;
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                padding-right: 16px;
+            }
+        }
+      &__title--context {
+          display: inline-block;
+          max-width: 87%;
+          @include susy-breakpoint(max-width $large) {
+              max-width: 87%;
+          }
+          @include susy-breakpoint(max-width $medium) {
+              max-width: 85%;
+          }
+          @include susy-breakpoint(max-width 500px) {
+              max-width: 77%;
+          }
+          @include susy-breakpoint(max-width 400px) {
+              max-width: 71%;
+          }
+      }
+    }
+    &-detail__info {
+        padding-top: 20px;
+        &--section {
+            margin-bottom: 19px;
+            font-size: toRem(14);
+            font-weight: 400;
+            line-height: 1.43;
+            color: #10416c;
+        }
+    }
+    .select-group {
+        @include susy-breakpoint(max-width $large) {
+            display: block!important;
+        }
+    }
+    &__subscribe {
+        /*padding-bottom: 21px;*/
+    }
+}
+.fontsize-small {
+    .etp-overview {
+        &-data-list {
+            &__date {
+                &::before {
+                    height: 8px;
+                }
+            }
+        }
+    }
+}

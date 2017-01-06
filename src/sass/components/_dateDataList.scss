@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the date data list show component.
+// -----------------------------------------------------------------------------
+.date-data-list {
+    //.date-data-list__section
+    &__section {
+        margin-bottom: 23px;
+        padding-left: 20px;
+        // mobile layout
+        @include susy-media(max-width  $medium) {
+            padding-right: 15px;
+        }
+        position: relative;
+        &--base-info {
+            color: $level1-color;
+            font-size: toRem(12);
+            font-weight: bold;
+            min-height: 23px;
+            line-height: 1.92;
+            margin-bottom: 9px;
+            span:not(:last-child) {
+                border-right: 1px solid;
+            }
+            span:not(:first-child) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            span:first-child {
+                padding-right: 10px;
+            }
+        }
+        &--date {
+            width: 16%;
+            display: inline-block;
+            // mobile layout
+            @include susy-media(max-width $medium) {
+                width: 141px;
+                display: block;
+                padding-bottom: 10px;
+                // border-bottom: 1px solid #ebebeb;
+                margin-bottom: 10px;
+            }
+            vertical-align: top;
+            &-day {
+                font-size: toRem(43);
+                font-weight: 900;
+                color: #d5e2e8;
+                height: toRem(50);
+                width: toRem(50);
+            }
+            &-month {
+                font-size: toRem(22);
+                color: $level1-color;
+                letter-spacing: 1px;
+                padding-left: 4px;
+                text-transform: uppercase;
+            }
+        }
+        &--content {
+            width: 83%;
+            display: inline-block;
+            border-left: solid 1px #ebebeb;
+            >:nth-child(n) {
+                margin-left: 19px;
+                // mobile layout
+                @include susy-media(max-width  $medium) {
+                    margin-left: 0px;
+                }
+            }
+            // mobile layout
+            @include susy-media(max-width  $medium) {
+                width: 100%;
+                display: block;
+                border-left: none;
+                padding-left: 0px;
+            }
+            &-type {
+                color: $hkex-hightlight;
+                font-size: toRem(12);
+                font-weight: bold;
+                text-transform: capitalize;
+                height: 23px;
+            }
+            &-title {
+                color: $level1-color;
+                font-size: toRem(16);
+                font-weight: bold;
+                line-height: 1.31;
+            }
+            &-title[data-file-type] {
+                @include file-icon;
+            }
+            &-brife {
+                color: $level1-color;
+                font-size: toRem(14);
+                line-height: 1.25rem;
+                &-gray-text {
+                    color: #777777;
+                }
+            }
+        }
+    }
+}

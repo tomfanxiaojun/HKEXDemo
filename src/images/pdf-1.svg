@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="12px" viewBox="0 0 23 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>PDF icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="23" height="12" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="23" height="12" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Listing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="listing-committee---tab---sc1" transform="translate(-458.000000, -304.000000)">
+            <g id="content" transform="translate(55.000000, 155.000000)">
+                <g id="PDF-icon" transform="translate(403.000000, 149.000000)">
+                    <g id="pdf-icon2">
+                        <use id="Rectangle" stroke="#E72742" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <path d="M3.9,9 L4.62,9 L4.62,6.741 L6.177,6.741 C7.356,6.741 8.202,5.958 8.202,4.851 C8.202,3.735 7.356,2.952 6.177,2.952 L3.9,2.952 L3.9,9 Z M4.62,3.537 L6.069,3.537 C6.888,3.537 7.473,4.086 7.473,4.851 C7.473,5.616 6.888,6.156 6.069,6.156 L4.62,6.156 L4.62,3.537 Z M9.48,9 L11.523,9 C13.359,9 14.601,7.758 14.601,5.976 C14.601,4.176 13.359,2.952 11.523,2.952 L9.48,2.952 L9.48,9 Z M13.845,5.976 C13.845,7.407 12.864,8.415 11.451,8.415 L10.218,8.415 L10.218,3.537 L11.451,3.537 C12.864,3.537 13.845,4.545 13.845,5.976 L13.845,5.976 Z M15.951,9 L16.689,9 L16.689,6.426 L19.524,6.426 L19.524,5.841 L16.689,5.841 L16.689,3.537 L19.812,3.537 L19.812,2.952 L15.951,2.952 L15.951,9 Z" id="PDF" fill="#E72742"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

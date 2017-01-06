@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Module:-Ticker*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ticker" transform="translate(-349.000000, -306.000000)" fill="#10416C">
+            <g id="Group-5" transform="translate(68.000000, 277.000000)">
+                <g id="Group-2" transform="translate(281.000000, 29.000000)">
+                    <g id="Group">
+                        <g id="Group-3">
+                            <path d="M15,30 C23.2842712,30 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 6.71572875,30 15,30 Z M12.2227451,23.3600927 L4.41176471,15.5487967 L6.6433156,13.3172458 L12.2227451,18.8965175 L22.2352931,8.82352941 L24.497143,11.0853793 L12.2227451,23.3600927 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

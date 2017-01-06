@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="market-hkex">
+<head>
+    {{>header title="Non CMS"}}
+
+</head>
+<body>
+    {{> topbar}}
+    <!-- end of topbar -->
+    {{> navigation2}}
+    <!-- end of nav -->
+
+
+    <div class="container nonCMS-container">
+
+        Main content goes here
+        <!-- end of main content -->
+    </div>
+
+    <footer>
+        <div class="container">
+        {{> footer}}
+        </div>
+    </footer>
+    <div class="overlay"></div>
+
+
+    <!-- build:js scripts/nonCms.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery.cookie/jquery.cookie.js"></script>
+    <script src="node_modules/jquery-placeholder/jquery.placeholder.js"></script>
+
+
+    <script src="scripts/collapse.js"></script>
+    <script src="scripts/fontSizer.js"></script>
+    <script type="text/javascript" src="scripts/navigation.js"></script>
+    <script src="scripts/navPopover.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>

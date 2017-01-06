@@ -1,0 +1,109 @@
+.scroll_tabs {
+  display: none;
+}
+.scroll_tabs_container {
+  padding-left: 0;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: left;
+  height: 43px;
+  margin-bottom: 0;
+  list-style: none;
+  color: $hkex-blue;
+  background-color: $white;
+  @include font-type;
+  border-bottom: 1px solid $background-blue-1;
+  div.scroll_tab_inner {
+    li {
+      line-height: 40px;
+      font-size: toRem(14);
+      cursor: pointer;
+      margin-right: 10px;
+      display: inline-block;
+      color: $tab-normal;
+      font-weight: bold;
+      a, a:hover, a:focus {
+        padding-left: 9px;
+        padding-right: 9px;
+        display: block;
+        text-decoration: none;
+        color: $tab-normal;
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    li:hover {
+      border-bottom: 4px solid $tab-hover;
+    }
+    li.tab_selected {
+      color: $hkex-blue;
+      border-bottom: 4px solid $hkex-red;
+      a, a:hover, a:focus {
+        color: $hkex-blue;
+      }
+    }
+
+    span.scroll_tab_left_finisher {
+      padding: 0px;
+      width: 0px;
+    }
+    span.scroll_tab_right_finisher {
+      padding: 0px;
+      width: 0px;
+    }
+
+  }
+  .scroll_tab_left_button {
+    z-index: $z-index-scroller-tab-left-arrow;
+    height: 44px;
+    // background: linear-gradient(to right, rgba(255,255,255,1)30%, rgba(255,255,255,0));
+    background: url('../images/left-arrow-bg.png') no-repeat center;
+    img.scroll_arrow_left {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 4px;
+    }
+  }
+
+  .scroll_tab_right_button {
+    height: 44px;
+    // background: linear-gradient(to left, rgba(255,255,255,1)30%, rgba(255,255,255,0));
+    background: url('../images/right-arrow-bg.png') no-repeat center;
+    img.scroll_arrow_right {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 4px;
+    }
+  }
+}
+
+.scroll_tabs_content > div {
+  display: none;
+  &:first-child {
+    display: block;
+  }
+}
+
+ul.scroll_tabs_side {
+  div.scroll_tab_inner {
+    li:first-child {
+      margin-left: 20px;
+    }
+    li:last-child {
+      margin-right: 20px;
+    }
+  }
+  .scroll_tab_left_button {
+    img.scroll_arrow_left {
+      margin-left: 10px;
+    }
+  }
+  .scroll_tab_right_button {
+    img.scroll_arrow_right {
+      margin-left: -10px;
+    }
+  }
+}

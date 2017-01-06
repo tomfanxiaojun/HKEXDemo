@@ -1,0 +1,485 @@
+.left-menu {
+    &__item {
+        cursor: pointer;
+        &--back-to-target {
+            color: #899bac;
+            padding-left: 5px;
+            line-height: 1.43;
+            text-transform: uppercase;
+        }
+    }
+    &__level1 {
+        margin: 0;
+        padding: 0;
+        li {
+            padding: 16px 35px 16px 0px;
+            list-style: none;
+            list-style-type: none;
+            border-bottom: 1px solid $level8-color;
+            float: left;
+            width: 100%;
+            @include susy-breakpoint(min-width $desktop-start) {
+                display: block !important;
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+            a {
+                color: $level1-color;
+                font-size: toRem(14);
+                font-weight: 400;
+                line-height: 1.38;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                float: left;
+                // max-width: 86%;
+                margin-left: 21px;
+                &:hover,
+                &:focus,
+                &:visited {
+                    text-decoration: none;
+                }
+                @include susy-breakpoint(min-width $large) {
+                    max-width: 89%;
+                }
+            }
+            &:hover {
+                @include susy-breakpoint(min-width $large) {
+                    background-color: $level3-color;
+                }
+            }
+            &.back {
+                padding-left: 20px;
+            }
+        }
+        li.active {
+            background-color: $level3-color;
+            background-image: url('../images/arrow-left.svg');
+            background-repeat: no-repeat;
+            background-position: left 20px top 20px;
+            @include susy-breakpoint(max-width $large) {
+                background-image: none;
+            }
+            a {
+                font-weight: 700;
+                display: inline-block;
+            }
+            @include susy-breakpoint(min-width $desktop-start) {
+                padding: 16px 9px 16px 21px;
+            }
+        }
+        li.hasChildren {
+            // padding-left: 21px;
+            padding-right: 0;
+            padding-bottom: 16px;
+            background-image: url('../images/arrow-down.svg');
+            @include susy-breakpoint(max-width $large) {
+                background-image: url(../images/arrow-left-tablet.svg);
+            }
+            background-repeat: no-repeat;
+            background-position: right 20px top 20px;
+            @include susy-breakpoint(max-width $large) {
+                padding-bottom: 16px;
+            }
+            a {
+                display: inline;
+                margin-right: 34px
+            }
+            .left-menu__level2 {
+                li {
+                    &.active {
+                        a {
+                            padding-left: 0;
+                        }
+                    }
+                    a {
+                        padding-left: 0;
+                        @include susy-breakpoint(max-width $large) {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        li.showChildren {
+            padding-right: 0;
+            background-image: url('../images/arrow-up.svg');
+            @include susy-breakpoint(max-width $large) {
+                background-image: url(../images/arrow-left-tablet.svg);
+            }
+            background-repeat: no-repeat;
+            background-position: right 20px top 22px;
+            @include susy-breakpoint(max-width $large) {
+                background-position: right 20px top 50%;
+                background-color: $level3-color;
+            }
+            @include susy-breakpoint(min-width $desktop-start) {
+                padding-bottom: 0;
+                background-color: $level3-color;
+            }
+            a {
+                font-weight: 700;
+                margin-right: 34px
+            }
+            .left-menu__level2 {
+                a {
+                    font-weight: 400;
+                    padding-left: 0px;
+                    &::before {
+                        content: "";
+                        background-image: none;
+                    }
+                }
+                @include susy-breakpoint(min-width $desktop-start) {
+                    display: block;
+                }
+                @include susy-breakpoint(max-width $large) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__level2 {
+        margin: 0;
+        padding: 0;
+        margin-top: 16px;
+        display: none;
+        float: left;
+        width: 100%;
+        @include susy-breakpoint(max-width $medium) {
+            padding-left: 0px;
+        }
+        li {
+            padding: 10px 13px 10px 0px;
+            @include susy-breakpoint(max-width $large) {
+                padding: 10px 13px 10px 36px;
+            }
+            border-bottom: none;
+            @include susy-breakpoint(max-width $large) {
+                // width: 46%;
+                float: left;
+                border-bottom: 1px solid $level8-color;
+                margin-right: 30px;
+                margin-left: 0px;
+                padding: 16px 13px 16px 0px;
+            }
+            @include susy-breakpoint(max-width $medium) {
+                width: 100%;
+                float: left;
+                border-bottom: 1px solid $level8-color;
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+            &:nth-child(odd) {
+                background-color: $left-menu-odd;
+                @include susy-breakpoint(max-width $large) {
+                    background-color: #FFF;
+                }
+            }
+            &:nth-child(even) {
+                background-color: $left-menu-even;
+                @include susy-breakpoint(max-width $large) {
+                    background-color: #FFF;
+                    margin-right: 0;
+                }
+            }
+            &:last-child {
+                @include susy-breakpoint(max-width $large) {
+                    // margin-bottom: -32px;
+                }
+                @include susy-breakpoint(max-width $medium) {
+                    // margin-bottom: -51px;
+                    border-bottom: none;
+                }
+            }
+            &:hover {
+                @include susy-breakpoint(min-width $large) {
+                    background-color: $level1-color;
+                }
+            }
+            a {
+                color: $white;
+                @include susy-breakpoint(max-width $large) {
+                    color: $level1-color;
+                }
+            }
+        }
+        li.back {
+            width: 100%;
+            // border-bottom: none;
+            padding-left: 0px;
+            background-position: left 21px top 21px;
+            @include susy-breakpoint(min-width $large) {
+                display: none !important;
+            }
+            @include susy-breakpoint(max-width $large) {
+                display: block;
+            }
+            a {
+                color: $level1-color;
+                padding-left: 20px !important;
+            }
+        }
+        li.menutitle {
+            width: 100%;
+            border-bottom: none;
+            font-weight: 700;
+            font-size: toRem(14);
+            color: $white;
+            text-transform: uppercase;
+            @include susy-breakpoint(min-width $large) {
+                display: none !important;
+            }
+            @include susy-breakpoint(max-width $large) {
+                display: block;
+                color: $level1-color;
+            }
+        }
+        li.active {
+            background-color: $level1-color;
+            padding: 10px 13px 10px 21px;
+            background-position: left 20px top 14px;
+            a {
+                &::before {
+                    margin-top: 0px;
+                    @include susy-breakpoint(max-width $large) {
+                        background: none !important;
+                    }
+                }
+                @include susy-breakpoint(max-width $large) {
+                    color: $level1-color;
+                }
+            }
+            @include susy-breakpoint(max-width $large) {
+                background-color: $level3-color;
+                padding: 16px 13px 16px 0px;
+                a {
+                    font-weight: 700 !important;
+                }
+            }
+        }
+        @include susy-breakpoint(max-width $large) {
+            /*position: absolute;
+            top: 6.6em;*/
+            position: relative;
+            // bottom: 2.1em;
+            width: 100%;
+            right: -100%;
+            background-color: #FFF;
+            margin-top: 0px;
+        }
+    }
+    &__wrapper {
+        float: left;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 1px 0 0 $level5-color;
+        // @include susy-breakpoint(min-width $desktop-start) {
+        //     display: block !important;
+        // }
+        @include susy-breakpoint(max-width $large) {
+            display: none;
+        }
+        .back {
+            // padding-left: 40px;
+            padding-top: 19px;
+            background-image: url(../images/arrow-right-tablet.svg);
+            background-repeat: no-repeat;
+            background-position: left 21px top 21px;
+            @include susy-breakpoint(min-width $large) {
+                display: none !important;
+            }
+        }
+    }
+}
+
+body {
+    @include susy-breakpoint(max-width $large) {
+        overflow-x: hidden;
+    }
+}
+
+.fontsize-large {
+    .left-menu__wrapper .back {
+        background-position: left 21px top 24px;
+    }
+    .left-menu {
+        &__title {
+            h2 {
+                @include susy-breakpoint(min-width $large) {
+                    padding: 15px 20px 13px 20px;
+                }
+                @include susy-breakpoint(max-width $large) {
+                    padding: 18px 20px 14px 20px;
+                    padding: 22px 20px 13px 20px\0;
+                }
+            }
+            .nav-icon {
+                @include susy-breakpoint(max-width $large) {
+                    width: 59px;
+                    height: 54px;
+                }
+                @include susy-breakpoint(max-width $medium) {
+                    padding-top: 0px;
+                    height: 72px;
+                    /*line-height:72px;*/
+                }
+            }
+        }
+        .left-menu__level1 {
+            li {
+                &.active {
+                    background-position: left 20px top 22px;
+                }
+                &.showChildren {
+                    background-position: right 20px top 24px;
+                    a {
+                        &::after {
+                            top: 5px;
+                            @include susy-breakpoint(max-width $large) {
+                                top: 7px;
+                            }
+                        }
+                    }
+                }
+                &.hasChildren {
+                    background-position: right 20px top 24px;
+                }
+                a {
+                    font-size: 0.825rem;
+                }
+            }
+        }
+        .left-menu__level2 {
+            li {
+                &.back {
+                    &::before {
+                        margin-top: 4px;
+                    }
+                }
+                &.active {
+                    background-position: left 20px top 16px;
+                    a {
+                        &::before {
+                            @include susy-breakpoint(min-width $large) {
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fontsize-small {
+    .left-menu__level1 li.hasChildren {
+        background-position: right 20px top 16px;
+    }
+    .left-menu__wrapper .back {
+        background-position: left 21px top 18px;
+    }
+    .left-menu {
+        &__title {
+            @include susy-breakpoint(max-width $large) {
+                min-height: 43px;
+            }
+            .nav-icon {
+                width: 43px;
+                height: 48px;
+            }
+            h2 {
+                @include susy-breakpoint(min-width $large) {
+                    padding: 20px 20px 15px 20px;
+                }
+            }
+        }
+        .left-menu__level1 {
+            li {
+                &.active {
+                    background-position: left 20px top 18px;
+                    a {
+                        &::before {
+                            @include susy-breakpoint(min-width $large) {
+                                height: 8px;
+                            }
+                        }
+                    }
+                }
+                &.showChildren {
+                    background-position: right 20px top 20px;
+                    a {
+                        &::before {
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+            .left-menu__level2 {
+                li {
+                    &.active {
+                        background-position: left 20px top 12px;
+                        a {
+                            &::before {
+                                @include susy-breakpoint(min-width $large) {
+                                    height: 8px;
+                                }
+                            }
+                        }
+                    }
+                    &.back {
+                        // margin-top: 10px;
+                        &::before {
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .left-menu__level2 {
+            li {
+                &.active {
+                    a {
+                        &::before {
+                            @include susy-breakpoint(min-width $large) {
+                                margin-top: 1px;
+                                height: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .left-menu__level2 {
+            li {
+                &.active {
+                    a {
+                        &::before {
+                            @include susy-breakpoint(min-width $large) {
+                                margin-top: 1px;
+                                height: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.leftside-menu_item {
+    cursor: pointer;
+}
+
+.show-left-menu__level2 {
+    @include susy-breakpoint(max-width $large) {
+        > .left-menu__link {
+            display: none !important;
+        }
+        padding-top:0px !important;
+        padding-bottom:0px !important;
+    }
+}

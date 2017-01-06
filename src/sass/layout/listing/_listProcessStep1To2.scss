@@ -1,0 +1,58 @@
+.ls-process {
+
+    //ls-process__step-wrapper
+    &__step-wrapper {
+        //margin-left: 43px;
+
+        @include susy-breakpoint(max-width $large) {
+            margin-left: 6px;
+        }
+
+        @include susy-breakpoint(max-width $medium) {
+            margin-left: 2px;
+        }
+    }
+
+     //ls-process__gallery
+    &__gallery {
+        @include clearfix;
+    }
+
+    //ls-process__gallery-item
+    &__gallery-item {
+        @include gallery(3 of 10);
+
+        @include susy-breakpoint(max-width $large) {
+            @include gallery(4 of 10);
+
+        }
+
+         @include susy-breakpoint(max-width $medium) {
+            @include gallery(6 of 12);
+
+        }
+    }
+
+    // ls-process__gallery-img
+    &__gallery-img {
+        margin: 0 auto;
+        width: 85px;
+        height: 85px;
+        background-color: #d8d8d8;
+        border-radius: 50%;
+        display: block;
+    }
+
+   //ls-process__galery-desc
+   &__gallery-desc {
+        // max-width: 230px;
+        text-align: center;
+        line-height: 1.43;
+        font-size: toRem(14);
+
+        @include susy-breakpoint(max-width $medium) {
+            width: 130px;
+            margin: 15px auto 20px auto;
+        }
+   }
+}

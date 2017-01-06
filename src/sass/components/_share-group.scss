@@ -1,0 +1,61 @@
+.share-group {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    &--show__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &--items {
+        height: 24px;
+        border: solid 1px #d1dde6;
+        line-height: 20px;
+        background: $white;
+        display: inline-block;
+        padding-left: 12px;
+        border-radius: 11px;
+        display: none;
+        position: absolute;
+        top: -1px;
+        right: -2px;
+        &__item {
+            display: inline-block;
+            height: 14px;
+            width: 18px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        $share-icons-map: (icon-index:1,icon-url: "../images/share-1.svg", icon-hover-url:"../images/share-1-hover.svg"),
+        (icon-index:2,icon-url: "../images/share-2.svg", icon-hover-url:"../images/share-2-hover.svg"),
+        (icon-index:3,icon-url: "../images/share-3.svg", icon-hover-url:"../images/share-3-hover.svg"),
+        (icon-index:4,icon-url: "../images/share-4.svg", icon-hover-url:"../images/share-4-hover.svg");
+        @each $share in $share-icons-map {
+            .share-#{map-get($share,icon-index)} {
+                background: url(#{map-get($share,icon-url)}) no-repeat center center;
+            }
+            .share-#{map-get($share,icon-index)}:hover {
+                background: url(#{map-get($share,icon-hover-url)}) no-repeat center center;
+            }
+        }        
+        &__close {
+            position: relative;
+            top: 0px;
+            right: -2px;
+        }
+    }
+}
+
+.fontsize-large {
+    .share-group--items {
+        top: 0px;
+        right: -3px;
+    }
+}
+
+.fontsize-small {
+    .share-group--items {
+        top: -4px;
+    }
+}
